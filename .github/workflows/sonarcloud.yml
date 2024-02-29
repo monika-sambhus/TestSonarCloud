@@ -46,5 +46,6 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"monika-sambhus_TestSonarCloud" /o:"monika-sambhus-key" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          MSBuild.exe TestSonalSol.sln 
+          MSBuild.exe TestSonalSol.sln
+          MSBuild.exe Source.PLS\ESB.Atlas.PLS.sln 
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
