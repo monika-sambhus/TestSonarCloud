@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp\TestConsoleApp.csproj", "{5C53B7FB-0AF4-4E3F-89C0-8DB3C9DDA977}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BBB.ESB.BTS.Components.Interface.Utilities", "BBB.ESB.BTS.Interface.Components.Utilities\BBB.ESB.BTS.Components.Interface.Utilities.csproj", "{D0860066-0B7C-4D82-B112-8EF0AF3E8277}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Components.Interface.Utilities", "BBB.ESB.BTS.Interface.Components.Utilities\Components.Interface.Utilities.csproj", "{D0860066-0B7C-4D82-B112-8EF0AF3E8277}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

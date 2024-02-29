@@ -1,4 +1,4 @@
-﻿namespace BBB.ESB.BTS.Components.Interface.Utilities
+﻿namespace ESB.BTS.Components.Interface.Utilities
 {
     /// <summary>
     /// Utility class to access ESBConfig db

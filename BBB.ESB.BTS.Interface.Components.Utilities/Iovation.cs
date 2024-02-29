@@ -3,7 +3,7 @@ using System.Xml;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
     [Serializable]
     public class Iovation
@@ -15,7 +15,7 @@ namespace BBB.ESB.BTS.Components.Interface.Utilities
 
         public static Iovation Load(System.Xml.XmlDocument xdoc)
         {
-            Log.WriteDebug("BBB.ESB.BTS.Components.Interface.Utilities.Iovation", xdoc, "xx");
+            Log.WriteDebug("ESB.BTS.Components.Interface.Utilities.Iovation", xdoc, "xx");
             XmlNode record = xdoc.SelectSingleNode("/*[local-name()='queryAllResponse' and namespace-uri()='urn:partner.soap.sforce.com']/*[local-name()='result' and namespace-uri()='urn:partner.soap.sforce.com']/*[local-name()='records' and namespace-uri()='urn:partner.soap.sforce.com'][1]");
             Iovation thisIovation = new Iovation(record);
             return thisIovation;

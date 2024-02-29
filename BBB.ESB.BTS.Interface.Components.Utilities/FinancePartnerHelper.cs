@@ -2,7 +2,7 @@
 using System.Text;
 using System.Xml;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
     public class FinancePartnerHelper
     {

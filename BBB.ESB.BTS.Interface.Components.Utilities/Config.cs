@@ -4,7 +4,7 @@ using System.Linq;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
 
 
@@ -13,7 +13,7 @@ namespace BBB.ESB.BTS.Components.Interface.Utilities
     /// </summary>
     public class Config
     {
-        private static string Process = "BBB.ESB.BTS.Components.Interface.Utilities.Config";
+        private static string Process = "ESB.BTS.Components.Interface.Utilities.Config";
 
         // Number of minutes that elapse after the last read before the settings cache expires
         private static int iConfigAgeMins = 10;

@@ -3,7 +3,7 @@ using System.Text;
 using System.Xml;
 using System.Net;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
     public class IovationMessageHelper
     {

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
 
     public class IovationSoapRequest

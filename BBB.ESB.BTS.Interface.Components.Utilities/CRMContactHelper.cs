@@ -2,11 +2,11 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
     public static class CRMContactHelper
     {
-        private static string Process = "BBB.ESB.BTS.Components.Interface.Utilities.Config";
+        private static string Process = "ESB.BTS.Components.Interface.Utilities.Config";
 
         public static string GetContactsById(int applicantCRMContactId)
         {

@@ -3,7 +3,7 @@ using System.Net;
 using System.Text;
 using System.Xml;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
     public class LogicalGlueHelper
     {
@@ -17,7 +17,7 @@ namespace BBB.ESB.BTS.Components.Interface.Utilities
             string score = logicalGlueResponse.SelectSingleNode("/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.BTS.BizTalk.Interface.LogicalGlue.Schema.LogicalGlueResponse']/*[local-name()='score' and namespace-uri()='']").InnerText;
             string inferenceUri = logicalGlueResponse.SelectSingleNode("/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.BTS.BizTalk.Interface.LogicalGlue.Schema.LogicalGlueResponse']/*[local-name()='inferenceUri' and namespace-uri()='']").InnerText;
 
-            inferenceUri = BBB.ESB.BTS.Components.Interface.Utilities.Config.GetStringConfigValue("LogicalGlue.APIUrl") + inferenceUri;
+            inferenceUri = ESB.BTS.Components.Interface.Utilities.Config.GetStringConfigValue("LogicalGlue.APIUrl") + inferenceUri;
 
             StringBuilder applicationUpdateMsg = new StringBuilder();
             applicationUpdateMsg.Append("<update xmlns='urn:partner.soap.sforce.com'>");
@@ -45,7 +45,7 @@ namespace BBB.ESB.BTS.Components.Interface.Utilities
             bool isIgnoreFuzzyLogicStatus = false;
             if(model.ToLower() == "fuzzylogic")
             {
-                isIgnoreFuzzyLogicStatus = Convert.ToBoolean(BBB.ESB.BTS.Components.Interface.Utilities.Config.GetStringConfigValue("FuzzyLogic.IgnoreStatus"));
+                isIgnoreFuzzyLogicStatus = Convert.ToBoolean(ESB.BTS.Components.Interface.Utilities.Config.GetStringConfigValue("FuzzyLogic.IgnoreStatus"));
             }
             
             string orgId = Config.GetStringConfigValue("SalesForce.OrgId");

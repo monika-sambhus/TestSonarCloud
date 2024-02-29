@@ -3,7 +3,7 @@ using System.Text;
 using System.Net.Mail;
 using System.Reflection;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
     public static class SMTP
     {

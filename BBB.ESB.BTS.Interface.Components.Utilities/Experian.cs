@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Xml;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
     public class Experian
     {
@@ -42,7 +42,7 @@ namespace BBB.ESB.BTS.Components.Interface.Utilities
 
             string createdTime = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss");
             //Config value moved to Config data
-            DateTime expireTime = DateTime.Parse(createdTime).AddMinutes(BBB.ESB.BTS.Components.Interface.Utilities.Config.GetIntConfigValue("BizTalk.TimeToLive"));
+            DateTime expireTime = DateTime.Parse(createdTime).AddMinutes(ESB.BTS.Components.Interface.Utilities.Config.GetIntConfigValue("BizTalk.TimeToLive"));
             string base64token = Base64EncodeToken(waspToken);
 
             headerRequest = headerRequest.Replace("[createdTime]", createdTime);
@@ -59,7 +59,7 @@ namespace BBB.ESB.BTS.Components.Interface.Utilities
 
             string createdTime = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss");
             //Config value moved to Config data
-            DateTime expireTime = DateTime.Parse(createdTime).AddMinutes(BBB.ESB.BTS.Components.Interface.Utilities.Config.GetIntConfigValue("BizTalk.TimeToLive"));
+            DateTime expireTime = DateTime.Parse(createdTime).AddMinutes(ESB.BTS.Components.Interface.Utilities.Config.GetIntConfigValue("BizTalk.TimeToLive"));
             string base64token = Base64EncodeToken(waspToken);
 
             headerRequest = headerRequest.Replace("[createdTime]", createdTime);

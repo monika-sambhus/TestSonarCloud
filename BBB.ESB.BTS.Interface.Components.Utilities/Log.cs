@@ -3,7 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Xml;
 
-namespace BBB.ESB.BTS.Components.Interface.Utilities
+namespace ESB.BTS.Components.Interface.Utilities
 {
     /// <summary>
     /// Helper class to write to Log table
