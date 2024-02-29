@@ -1,0 +1,3 @@
+﻿C:\Monika\BBB_BizTalk\Source.PLS\Atlas\Components\Interface\BBB.ESB.Atlas.PLS.Utilities\PLSPHelper.cs
+C:\Monika\BBB_BizTalk\Source.PLS\Atlas\Components\Interface\BBB.ESB.Atlas.PLS.Utilities\Properties\AssemblyInfo.cs
+C:\Monika\BBB_BizTalk\Source.PLS\Atlas\Components\Interface\BBB.ESB.Atlas.PLS.Utilities\BBB.ESB.Atlas.PLS.snk

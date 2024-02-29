@@ -1,0 +1,1349 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="a81da316-fd14-4682-ab5e-4a7dd8486b72" LowerBound="1.1" HigherBound="443.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BBB.ESB.Atlas.PLS.Customer" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="54900145-423a-4385-992c-6c1ff7c08add" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveCustomerDetailsOnewayTrigger" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c705962c-afa5-4e5e-938d-fa7d85e901b2" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveCustomerDetailsTrigger" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="ab1e5e73-7278-46a5-88eb-58753663e400" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.58">
+                    <om:Property Name="Ref" Value="BBB.ESB.Atlas.Loans.Common.Schemas.APIRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="bab03de8-055e-4a05-b4bf-b0f812c5e9e5" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="8.60" HigherBound="8.82">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="8dd4a8ac-dc05-412e-8535-626b03e477d8" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="TransferCustomer_PortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="3bb33922-36c7-4150-89af-3748f83dca92" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TransferCustomer" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="765adc3d-d1fd-4b3d-b729-b68a47eb65ed" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.58">
+                    <om:Property Name="Ref" Value="BBB.ESB.Atlas.Loans.Common.Schemas.APIRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="3fa0399b-17cd-42c1-871d-42e573cfd894" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="GetPLSUniqueID_PortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="017ece74-5963-45e5-afc4-b8c6bc5477db" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReturnPLSID" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="59020d92-c3f1-4258-8a81-88a667deb787" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.65">
+                    <om:Property Name="Ref" Value="BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="6473ec9e-a3d9-4815-98af-d7d36742ca35" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SalesforeRestPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f54b2b9c-3638-4cd6-a293-ccf5956e150b" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CompositePatch" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="e027be2b-51c7-4a3f-bd4c-f28a6b784065" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.80">
+                    <om:Property Name="Ref" Value="BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCompositeAPI.PostOrPatch" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="89746d35-6646-4958-a5e7-22b84a45e2f2" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="29.82" HigherBound="29.104">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="d417bc1c-1cd2-467b-9c4c-ec9927335a7f" ParentLink="Module_ServiceDeclaration" LowerBound="36.1" HigherBound="442.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OnRamp_TransferCustomer" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="af42ff5e-657b-4caf-8257-05fcece4b291" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="54.1" HigherBound="55.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xDoc" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="cf7d6dc2-f13c-43bb-adbb-dce19a1de419" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="55.1" HigherBound="56.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Process" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d380bc00-d9ef-4fad-a7ee-b7415e007120" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="56.1" HigherBound="57.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ProcessId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a5384c01-feee-4429-b299-693cd153bfad" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="57.1" HigherBound="58.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="dtQueryExecutionDate" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="06870780-34ca-4d6f-92d2-e1ab36006119" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="58.1" HigherBound="59.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strContactId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9decc7e5-9a01-4b26-a10e-ef2caa36d7d7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="59.1" HigherBound="60.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strPLSEventId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="45b1796b-1582-4b21-830b-76c21de282c9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="60.1" HigherBound="61.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PLSPartnerName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="55a4f14b-35ee-4ee8-8c79-bb250974e1f3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="61.1" HigherBound="62.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="BBB.ESB.BTS.Components.Interface.Utilities.EmailAlert" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="objEmailAlert" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d4204282-2922-42e9-9109-02fe7f1ecb06" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="62.1" HigherBound="63.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="triggerReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b5e8a0b8-e1bf-4cbc-93e5-a396c1b6ae10" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="63.1" HigherBound="64.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="IntegrationActionId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="17146eaf-75d5-4245-b502-979540b05119" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="64.1" HigherBound="65.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strPLSCustomerReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0f0e0b46-a0f7-48f3-9843-ec9f88d69a06" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="65.1" HigherBound="66.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xPLSCustomerReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d4c819e3-85ce-48d9-95ef-04a50d718a64" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="66.1" HigherBound="67.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strPLSDebugLog" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ae3efaf9-89b0-4951-9f78-878e222da811" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="67.1" HigherBound="68.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strSFUpdateStatus" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="619a89d1-881e-4355-b0de-1fddff90ccda" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="68.1" HigherBound="69.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strPLSCustomerRes" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0d596a7e-a53c-428d-9129-f59e13835113" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="69.1" HigherBound="70.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xPLSCustomerRes" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="969c1ca1-40ce-4e4c-a105-3b301dff0763" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="errorCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b27e1431-84ef-4f0f-9355-3c32081a0b10" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Exception" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="baseExec" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="93033625-a79a-4296-86db-a7a1e612b9c3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="819b9ab6-5f2f-4e68-949e-4f0781ea7796" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="isPLSPResponseSuccess" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="CorrelationDeclaration" OID="dcbb881a-19ed-4d5a-8f45-987d148cb7f7" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="47.1" HigherBound="48.1">
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.PLS.Customer.CorrelationType_PLSPartner" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Correlation_PLSPartner" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="StatementRef" OID="4cac86dd-7dd5-4c24-a705-e9d17db25201" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="157.88" HigherBound="157.121">
+                    <om:Property Name="Initializes" Value="True" />
+                    <om:Property Name="Ref" Value="ef9c531a-1a1f-4642-95d9-c2f77d9eb41f" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="86bcca68-23e0-43e2-bdc5-4624308a2790" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="159.82" HigherBound="159.104">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="2444d160-0a67-4c5c-8467-bd22dc17236e" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_2" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="61740b5c-515b-4356-8d32-8b58f52c8eab" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="48.1" HigherBound="49.1">
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.Loans.Common.Schemas.APIRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgOnRampRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="73b6d2f5-2d45-4905-a91e-5169a03065a0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="49.1" HigherBound="50.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgOnRampResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5c260c57-dacc-4e6f-87e6-975e9d043d15" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="50.1" HigherBound="51.1">
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.Loans.Common.Schemas.APIRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgOnRampRequestCopy" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b27d42b4-9222-469b-9471-c6ef663890d0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="51.1" HigherBound="52.1">
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgSalesforceCanonical" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f85ee155-bf89-4252-890a-993d259741df" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="52.1" HigherBound="53.1">
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCompositeAPI.PostOrPatch" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgSalesforceComposite" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0fdede53-2a20-46ca-b3fe-d62c74f7f04e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="53.1" HigherBound="54.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgSalesforceCompositeRes" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="97668171-5bfa-467b-a95b-ec712731fbf2" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="dd105591-f0c0-4239-acb4-71ad64856798" ParentLink="ServiceBody_Statement" LowerBound="76.1" HigherBound="96.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ReceiveCustomerDetailsTriggerPort" />
+                    <om:Property Name="MessageName" Value="msgOnRampRequest" />
+                    <om:Property Name="OperationName" Value="ReceiveCustomerDetailsTrigger" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ReceiveCustomerDetailsTrigger" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="18689b59-7cdc-48cf-b258-def4ee946ae6" ParentLink="ServiceBody_Statement" LowerBound="96.1" HigherBound="107.1">
+                    <om:Property Name="Expression" Value="Process = &quot;BBB.ESB.Atlas.PLS.Customer.OnRamp_RestTrigger&quot;;&#xD;&#xA;ProcessId = BBB.ESB.BTS.Components.Interface.Utilities.Log.GenerateNewProcessId ();&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;start&quot;, ProcessId);&#xD;&#xA;&#xD;&#xA;xDoc = msgOnRampRequest;&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;msgOnRampRequest:&quot; + xDoc.InnerXml , ProcessId);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Log start" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="ee1306e8-23de-483c-8e75-87b2ea5ea6cd" ParentLink="ServiceBody_Statement" LowerBound="107.1" HigherBound="118.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct_APIResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="695e4f68-dad7-4730-98eb-610cc3c8e058" ParentLink="ComplexStatement_Statement" LowerBound="110.1" HigherBound="117.1">
+                        <om:Property Name="Expression" Value="xDoc = new System.Xml.XmlDocument();&#xD;&#xA;xDoc.LoadXml(&quot;&lt;message&gt;&lt;status&gt;success&lt;/status&gt;&lt;/message&gt;&quot;);&#xD;&#xA;&#xD;&#xA;msgOnRampResponse = xDoc;&#xD;&#xA;msgOnRampResponse(WCF.OutboundHttpStatusCode) = &quot;202&quot;;&#xD;&#xA;msgOnRampResponse(WCF.OutboundHttpStatusDescription) = &quot;Accepted&quot;;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="Assign_APIResponse" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="39b30765-fe2d-4e35-aada-2d47885cef72" ParentLink="Construct_MessageRef" LowerBound="108.23" HigherBound="108.40">
+                        <om:Property Name="Ref" Value="msgOnRampResponse" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="b7e3c7ab-8145-4346-9436-e73b52c97fa6" ParentLink="ServiceBody_Statement" LowerBound="118.1" HigherBound="120.1">
+                    <om:Property Name="PortName" Value="ReceiveCustomerDetailsTriggerPort" />
+                    <om:Property Name="MessageName" Value="msgOnRampResponse" />
+                    <om:Property Name="OperationName" Value="ReceiveCustomerDetailsTrigger" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="SendTriggerResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="4a999593-a2e2-4d02-bca8-e1c5f6d5f2b2" ParentLink="ServiceBody_Statement" LowerBound="120.1" HigherBound="123.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;dtQueryExecutionDate = System.DateTime.Now;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="InitiaseQueryExecutionDate" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="ef34c18b-ad75-496c-b923-9a570005b4f7" ParentLink="ServiceBody_Statement" LowerBound="123.1" HigherBound="440.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="2a185afb-44c3-4e95-9c3e-58ce7183c571" ParentLink="ComplexStatement_Statement" LowerBound="128.1" HigherBound="146.1">
+                        <om:Property Name="Expression" Value="if((System.Boolean) xpath(msgOnRampRequest,  &quot;boolean(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='data' and namespace-uri()='']/*[local-name()='id' and namespace-uri()=''])&quot;))&#xD;&#xA;{&#xD;&#xA;    strContactId = (System.String) xpath(msgOnRampRequest,  &quot;string(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='data' and namespace-uri()='']/*[local-name()='id' and namespace-uri()=''])&quot;);&#xD;&#xA;}&#xD;&#xA;if((System.Boolean) xpath(msgOnRampRequest,  &quot;boolean(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='data' and namespace-uri()='']/*[local-name()='plsEvent' and namespace-uri()='']/*[local-name()='id' and namespace-uri()=''])&quot;))&#xD;&#xA;{&#xD;&#xA;    strPLSEventId = (System.String) xpath(msgOnRampRequest,  &quot;string(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='data' and namespace-uri()='']/*[local-name()='plsEvent' and namespace-uri()='']/*[local-name()='id' and namespace-uri()=''])&quot;);&#xD;&#xA;}&#xD;&#xA;if((System.Boolean) xpath(msgOnRampRequest,  &quot;boolean(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='meta' and namespace-uri()='']/*[local-name()='integrationActionId' and namespace-uri()=''])&quot;))&#xD;&#xA;{&#xD;&#xA;    IntegrationActionId = (System.String) xpath(msgOnRampRequest,  &quot;string(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='meta' and namespace-uri()='']/*[local-name()='integrationActionId' and namespace-uri()=''])&quot;);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;ContactId: &quot; + strContactId , ProcessId);&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;PLS Event Id: &quot; + strPLSEventId , ProcessId);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="GetContactId" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="2164a8e1-13a8-43c7-abf2-11e584ffc017" ParentLink="ComplexStatement_Statement" LowerBound="146.1" HigherBound="148.1">
+                        <om:Property Name="Expression" Value="PLSPartnerName = &quot;UMI&quot;;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="SetPLSPartner" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="d9145134-07c5-48ef-933d-aa0d0315f64b" ParentLink="ComplexStatement_Statement" LowerBound="148.1" HigherBound="156.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_PLSCustomerDetails" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageAssignment" OID="c926a8be-4037-4689-aa07-e1b1d3e5afdf" ParentLink="ComplexStatement_Statement" LowerBound="151.1" HigherBound="155.1">
+                            <om:Property Name="Expression" Value="msgOnRampRequestCopy = msgOnRampRequest;&#xD;&#xA;msgOnRampRequestCopy(BBB.ESB.Atlas.PLS.Common.Schemas.PLSPartner)  = PLSPartnerName;&#xD;&#xA;msgOnRampRequestCopy(BBB.ESB.Atlas.PLS.Common.Schemas.ProcessID) = ProcessId;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="SetFinancePartner" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="e0e5406a-8718-4fac-9199-4408f5872dc9" ParentLink="Construct_MessageRef" LowerBound="149.31" HigherBound="149.51">
+                            <om:Property Name="Ref" Value="msgOnRampRequestCopy" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Task" OID="26f2237c-673a-4e4e-9dba-1ec19c614007" ParentLink="ComplexStatement_Statement" LowerBound="156.1" HigherBound="160.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Group_PLSCustomerDetails" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Send" OID="ef9c531a-1a1f-4642-95d9-c2f77d9eb41f" ParentLink="ComplexStatement_Statement" LowerBound="156.1" HigherBound="158.1">
+                            <om:Property Name="PortName" Value="SendPLSCustomer_Port" />
+                            <om:Property Name="MessageName" Value="msgOnRampRequestCopy" />
+                            <om:Property Name="OperationName" Value="TransferCustomer" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_PLSCustomerDetails" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="2444d160-0a67-4c5c-8467-bd22dc17236e" ParentLink="ComplexStatement_Statement" LowerBound="158.1" HigherBound="160.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="GetPLSUniqueID" />
+                            <om:Property Name="MessageName" Value="msgSalesforceCanonical" />
+                            <om:Property Name="OperationName" Value="ReturnPLSID" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rcv_PLSCustomer" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Task" OID="c05d9b03-f2a5-436d-a3e4-21e42534f41a" ParentLink="ComplexStatement_Statement" LowerBound="160.1" HigherBound="211.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Group_SaveAndValidateResponse" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="fc830e76-be18-434f-89fc-37b9120e42bd" ParentLink="ComplexStatement_Statement" LowerBound="160.1" HigherBound="179.1">
+                            <om:Property Name="Expression" Value="//Check node existance&#xD;&#xA;if((System.Boolean) xpath(msgSalesforceCanonical, &quot;boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSDebugLog' and namespace-uri()=''])&quot;) == true)&#xD;&#xA;{&#xD;&#xA;    strPLSDebugLog = xpath(msgSalesforceCanonical, &quot;string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSDebugLog' and namespace-uri()=''])&quot;);&#xD;&#xA;}&#xD;&#xA;//Check node existance&#xD;&#xA;if((System.Boolean) xpath(msgSalesforceCanonical, &quot;boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSPUniqueId' and namespace-uri()=''])&quot;) == true)&#xD;&#xA;{&#xD;&#xA;    if(System.String.IsNullOrEmpty(strSFUpdateStatus.Trim()))&#xD;&#xA;        {&#xD;&#xA;            strSFUpdateStatus = xpath(msgSalesforceCanonical, &quot;string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSPUniqueId' and namespace-uri()=''])&quot;);&#xD;&#xA;        }&#xD;&#xA;    else&#xD;&#xA;        {&#xD;&#xA;            strSFUpdateStatus = (System.String) xpath(msgSalesforceCanonical, &quot;string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSPUniqueId' and namespace-uri()=''])&quot;) + System.Environment.NewLine + System.Environment.NewLine + strSFUpdateStatus;&#xD;&#xA;        }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SaveDebugLog" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="efe43575-86c1-4792-b80d-07b16a7d8d14" ParentLink="ComplexStatement_Statement" LowerBound="179.1" HigherBound="187.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;//Read request from response&#xD;&#xA;//Check node existance&#xD;&#xA;if((System.Boolean) xpath(msgSalesforceCanonical, &quot;boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='Request' and namespace-uri()=''])&quot;) == true)&#xD;&#xA;{&#xD;&#xA;strPLSCustomerReq = xpath(msgSalesforceCanonical, &quot;string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='Request' and namespace-uri()=''])&quot;);&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SaveRequest" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="b2cfbd0c-7fd3-49cb-a9aa-1bba8763da0b" ParentLink="ComplexStatement_Statement" LowerBound="187.1" HigherBound="199.1">
+                            <om:Property Name="Expression" Value="//Read request from response&#xD;&#xA;//Check node existance&#xD;&#xA;if((System.Boolean) xpath(msgSalesforceCanonical, &quot;boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='IsSuccess' and namespace-uri()=''])&quot;) == true)&#xD;&#xA;{&#xD;&#xA;    isPLSPResponseSuccess = xpath(msgSalesforceCanonical, &quot;string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='IsSuccess' and namespace-uri()=''])&quot;);&#xD;&#xA;}&#xD;&#xA;//Check node existance&#xD;&#xA;if((System.Boolean) xpath(msgSalesforceCanonical, &quot;boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PayLoad' and namespace-uri()=''])&quot;) == true)&#xD;&#xA;{&#xD;&#xA;strPLSCustomerRes = xpath(msgSalesforceCanonical, &quot;string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PayLoad' and namespace-uri()=''])&quot;);&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SaveResponseStatus" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="22bdc74d-1418-48e6-ab6a-f2a9f5591d5c" ParentLink="ComplexStatement_Statement" LowerBound="199.1" HigherBound="211.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="IsPLSPUpdateSuccess" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="af10bc6f-a9dd-45d9-a038-2e1b48b7ebe5" ParentLink="ReallyComplexStatement_Branch" LowerBound="200.21" HigherBound="203.1">
+                                <om:Property Name="Expression" Value="isPLSPResponseSuccess == &quot;Completed Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="isSuccess" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="ab68ec63-6695-4e85-8e53-640196d13b44" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="c2a997a2-2394-41f2-8c0b-7dc60b45a5d2" ParentLink="ComplexStatement_Statement" LowerBound="205.1" HigherBound="210.1">
+                                    <om:Property Name="Expression" Value="&#xD;&#xA;//strNACKErrorDesc = xpath(XmlSoapMsg,&quot;string(/*[local-name()='NACK' and namespace-uri()='http://schema.microsoft.com/BizTalk/2003/NACKMessage.xsd']/*[local-name()='ErrorDescription' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;throw new System.Exception(&quot;Error has occured sending customer details to PLSP. Exception details: &quot; + strPLSCustomerRes);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ThrowNACKerror" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="32d36c8a-a5c5-4207-9a9f-8c1224cdb6f3" ParentLink="ComplexStatement_Statement" LowerBound="211.1" HigherBound="217.1">
+                        <om:Property Name="Expression" Value="xDoc = new System.Xml.XmlDocument();&#xD;&#xA;xDoc = msgSalesforceCanonical;&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;msgSalesforceCanonical:&quot; + xDoc.InnerXml , ProcessId);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Log" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="5b9291fe-9b16-4caa-9679-13a1845b2266" ParentLink="ComplexStatement_Statement" LowerBound="217.1" HigherBound="223.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct_SFComposite" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="2c4d403a-f687-4f93-a23e-39f0efae9116" ParentLink="ComplexStatement_Statement" LowerBound="220.1" HigherBound="222.1">
+                            <om:Property Name="ClassName" Value="BBB.ESB.Atlas.PLS.Customer.Maps.SFCanonical_To_SFCompositeReq" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Xform_CanonicalToSFComposite" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="58e6734e-a738-458f-9421-aa7f0bcf998e" ParentLink="Transform_OutputMessagePartRef" LowerBound="221.36" HigherBound="221.58">
+                                <om:Property Name="MessageRef" Value="msgSalesforceComposite" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="eed51a81-6e5b-4301-a977-1670de8ef02d" ParentLink="Transform_InputMessagePartRef" LowerBound="221.125" HigherBound="221.147">
+                                <om:Property Name="MessageRef" Value="msgSalesforceCanonical" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="d9ac1b19-ecae-4030-a784-a70e707c35ac" ParentLink="Construct_MessageRef" LowerBound="218.31" HigherBound="218.53">
+                            <om:Property Name="Ref" Value="msgSalesforceComposite" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Scope" OID="7d46763a-1064-4ad1-9665-c62f53c71330" ParentLink="ComplexStatement_Statement" LowerBound="223.1" HigherBound="288.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Scope_Delivery" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="e02365e7-a0f9-474c-a4ac-eeea1c1f19c9" ParentLink="ComplexStatement_Statement" LowerBound="235.1" HigherBound="241.1">
+                            <om:Property Name="Expression" Value="xDoc = new System.Xml.XmlDocument();&#xD;&#xA;xDoc = msgSalesforceComposite;&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;msgSalesforceComposite:&quot; + xDoc.InnerXml , ProcessId);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Log" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="64f99563-2b7c-46ee-8b45-7047671c9a52" ParentLink="ComplexStatement_Statement" LowerBound="241.1" HigherBound="243.1">
+                            <om:Property Name="PortName" Value="CompositeSF" />
+                            <om:Property Name="MessageName" Value="msgSalesforceComposite" />
+                            <om:Property Name="OperationName" Value="CompositePatch" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendUpdateAction" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="4976c136-79c5-455d-9185-84a9b121814f" ParentLink="ComplexStatement_Statement" LowerBound="243.1" HigherBound="245.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="CompositeSF" />
+                            <om:Property Name="MessageName" Value="msgSalesforceCompositeRes" />
+                            <om:Property Name="OperationName" Value="CompositePatch" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_SalesforceRes" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="02feb542-3543-4352-b506-a93467949040" ParentLink="ComplexStatement_Statement" LowerBound="245.1" HigherBound="251.1">
+                            <om:Property Name="Expression" Value="xDoc = new System.Xml.XmlDocument();&#xD;&#xA;xDoc = msgSalesforceCompositeRes;&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;msgSalesforceCompositeRes:&quot; + xDoc.InnerXml , ProcessId);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Log" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Task" OID="965660dd-6c49-4083-aec6-acffee742ca4" ParentLink="ComplexStatement_Statement" LowerBound="251.1" HigherBound="265.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Group_ValidateResponse" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="3e854cda-dada-4222-9688-35a0c0949e59" ParentLink="ComplexStatement_Statement" LowerBound="251.1" HigherBound="265.1">
+                                <om:Property Name="Expression" Value="&#xD;&#xA;//Check error&#xD;&#xA;&#xD;&#xA;errorCount = xpath(msgSalesforceCompositeRes, &quot;count(/*[local-name()='PostOrPatchResponse' and namespace-uri()='http://BBB.ESB.Atlas.Loans.Common.Schemas.SalesforceCompositeAPI']/*[local-name()='compositeResponse' and namespace-uri()=''][starts-with(httpStatusCode,'4')])&quot;);&#xD;&#xA;&#xD;&#xA;if(errorCount &gt; 0)&#xD;&#xA;{&#xD;&#xA;    throw new System.Exception(&quot;Error has occured communicating salesforce, No records are created/updated&quot;);&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace(Process, &quot;Successfully updated Salesforce&quot; , ProcessId);    &#xD;&#xA;}" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Log Message" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageDeclaration" OID="4c5108b1-77e9-4847-895b-fd23fdde8a4b" ParentLink="Scope_MessageDeclaration" LowerBound="226.1" HigherBound="227.1">
+                            <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                            <om:Property Name="ParamDirection" Value="In" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="XmlSoapMsg" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableDeclaration" OID="99d29c62-77e9-4bc5-bd4e-c545c580a9ae" ParentLink="Scope_VariableDeclaration" LowerBound="227.1" HigherBound="228.1">
+                            <om:Property Name="UseDefaultConstructor" Value="False" />
+                            <om:Property Name="Type" Value="System.String" />
+                            <om:Property Name="ParamDirection" Value="In" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="strSoapXml" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableDeclaration" OID="ced48d4b-9c72-4fb4-8a4c-ff863e62a9b0" ParentLink="Scope_VariableDeclaration" LowerBound="228.1" HigherBound="229.1">
+                            <om:Property Name="UseDefaultConstructor" Value="False" />
+                            <om:Property Name="Type" Value="System.String" />
+                            <om:Property Name="ParamDirection" Value="In" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="strNACKErrorDesc" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableDeclaration" OID="259109fb-2011-4398-b086-e18c16fd40b3" ParentLink="Scope_VariableDeclaration" LowerBound="229.1" HigherBound="230.1">
+                            <om:Property Name="UseDefaultConstructor" Value="True" />
+                            <om:Property Name="Type" Value="System.Web.Services.Protocols.SoapException" />
+                            <om:Property Name="ParamDirection" Value="In" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="soapExc" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Catch" OID="688154f4-dfb9-45f6-ad15-17d42dede81a" ParentLink="Scope_Catch" LowerBound="268.1" HigherBound="286.1">
+                            <om:Property Name="ExceptionName" Value="wcfdelFailExc" />
+                            <om:Property Name="ExceptionType" Value="Microsoft.XLANGs.BaseTypes.DeliveryFailureException" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Catch_DeliveryException" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="34272497-af05-45f2-8c78-1fbc2a433e52" ParentLink="Catch_Statement" LowerBound="271.1" HigherBound="280.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct_SoapException" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="b7f28b8e-3fa8-430f-bad0-a1faea9156f8" ParentLink="ComplexStatement_Statement" LowerBound="274.1" HigherBound="279.1">
+                                    <om:Property Name="Expression" Value="XmlSoapMsg = new System.Xml.XmlDocument();&#xD;&#xA;soapExc = (System.Web.Services.Protocols.SoapException)wcfdelFailExc.InnerException;&#xD;&#xA;strSoapXml = soapExc.Detail.InnerXml; &#xD;&#xA;XmlSoapMsg.LoadXml(strSoapXml);&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="f9efb045-f4d5-4984-aa16-853658d35dc1" ParentLink="Construct_MessageRef" LowerBound="272.43" HigherBound="272.53">
+                                    <om:Property Name="Ref" Value="XmlSoapMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="a6beea36-5622-4b84-b036-79b6f7f087bb" ParentLink="Catch_Statement" LowerBound="280.1" HigherBound="285.1">
+                                <om:Property Name="Expression" Value="&#xD;&#xA;strNACKErrorDesc = xpath(XmlSoapMsg,&quot;string(/*[local-name()='NACK' and namespace-uri()='http://schema.microsoft.com/BizTalk/2003/NACKMessage.xsd']/*[local-name()='ErrorDescription' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;throw new System.Exception(&quot;Error has occured sending IntegrationAction in Salesforce. Exception details: &quot; + strNACKErrorDesc);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ThrowNACKerror" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="a7349143-5e71-4c70-9ff4-1598215635e1" ParentLink="ComplexStatement_Statement" LowerBound="288.1" HigherBound="291.1">
+                        <om:Property Name="Expression" Value="BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;end&quot;, ProcessId);&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Log end" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="3ce4d6cc-a8c4-4451-bf07-8de4810f45e1" ParentLink="Scope_Catch" LowerBound="294.1" HigherBound="438.1">
+                        <om:Property Name="ExceptionName" Value="Ex" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CatchAllExceptions" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="765c3c51-ab4d-43ff-840a-feb0a59c13fe" ParentLink="Catch_Statement" LowerBound="297.1" HigherBound="304.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;baseExec = Ex.GetBaseException();&#xD;&#xA;FaultMsg = baseExec.Message;&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;FaultMsg: &quot; + FaultMsg , ProcessId);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="AssignFaultMsg" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="74ef5a57-db69-43c0-a12b-c1c2744f2803" ParentLink="Catch_Statement" LowerBound="304.1" HigherBound="338.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_Canonical" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="bf710156-c5ca-4688-a458-0838942c8af0" ParentLink="ComplexStatement_Statement" LowerBound="307.1" HigherBound="337.1">
+                                <om:Property Name="Expression" Value="xDoc = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;xDoc.LoadXml(@&quot;&lt;ns0:Root xmlns:ns0=&quot;&quot;http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical&quot;&quot;&gt;&#xD;&#xA;  &lt;Integration_Action__c&gt;&#xD;&#xA;    &lt;Id&gt;&lt;/Id&gt;&#xD;&#xA;    &lt;Debug_Log__c&gt;&lt;/Debug_Log__c&gt;    &#xD;&#xA;    &lt;Status__c&gt;&lt;/Status__c&gt;    &#xD;&#xA;  &lt;/Integration_Action__c&gt;  &#xD;&#xA;&lt;/ns0:Root&gt;&quot;);&#xD;&#xA;&#xD;&#xA;msgSalesforceCanonical = xDoc;&#xD;&#xA;&#xD;&#xA;//Contact&#xD;&#xA;//Id&#xD;&#xA;//xpath(msgSalesforceCanonical, &quot;/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='Contact' and namespace-uri()='']/*[local-name()='Id' and namespace-uri()='']&quot;) = strContactId;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//Integration action&#xD;&#xA;//Id&#xD;&#xA;xpath(msgSalesforceCanonical, &quot;/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='Integration_Action__c' and namespace-uri()='']/*[local-name()='Id' and namespace-uri()='']&quot;) = IntegrationActionId;&#xD;&#xA;//Status&#xD;&#xA;xpath(msgSalesforceCanonical, &quot;/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='Integration_Action__c' and namespace-uri()='']/*[local-name()='Status__c' and namespace-uri()='']&quot;) = &quot;Errors&quot;;&#xD;&#xA;//DebugLog&#xD;&#xA;xpath(msgSalesforceCanonical, &quot;/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='Integration_Action__c' and namespace-uri()='']/*[local-name()='Debug_Log__c' and namespace-uri()='']&quot;) = BBB.ESB.Atlas.PLS.Utilities.PLSPHelper.UpdateIDHubIntActionMessage(strPLSEventId,IntegrationActionId,false,ProcessId,PLSPartnerName,FaultMsg+ System.Environment.NewLine ,null,null,null);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;msgSalesforceCanonical(BBB.ESB.Atlas.PLS.Common.Schemas.ProcessID) = ProcessId;&#xD;&#xA;msgSalesforceCanonical(BBB.ESB.Atlas.PLS.Common.Schemas.PLSPartner) = PLSPartnerName;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Assign_Canonical" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="2f684527-96fc-43c2-aacc-4338f136e551" ParentLink="Construct_MessageRef" LowerBound="305.35" HigherBound="305.57">
+                                <om:Property Name="Ref" Value="msgSalesforceCanonical" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Construct" OID="beb272c0-3c2e-4d61-9dcb-bec3af7eda40" ParentLink="Catch_Statement" LowerBound="338.1" HigherBound="344.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_SFComposite" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="132b9e53-80ea-4ba8-92c9-7f5b28e6395d" ParentLink="ComplexStatement_Statement" LowerBound="341.1" HigherBound="343.1">
+                                <om:Property Name="ClassName" Value="BBB.ESB.Atlas.PLS.Customer.Maps.SFCanonical_To_SFCompositeReq" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Xform_CanonicalToSFComposite" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="60c24d56-20a8-4c3f-8d53-a24e940794c9" ParentLink="Transform_OutputMessagePartRef" LowerBound="342.40" HigherBound="342.62">
+                                    <om:Property Name="MessageRef" Value="msgSalesforceComposite" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="ca0add77-0a2a-45e1-9fee-9e1e94a53367" ParentLink="Transform_InputMessagePartRef" LowerBound="342.129" HigherBound="342.151">
+                                    <om:Property Name="MessageRef" Value="msgSalesforceCanonical" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="f9d73409-aed6-483c-95fa-a0f9c0bb27f3" ParentLink="Construct_MessageRef" LowerBound="339.35" HigherBound="339.57">
+                                <om:Property Name="Ref" Value="msgSalesforceComposite" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Scope" OID="2985f29f-fabb-4881-905c-f064a92577e2" ParentLink="Catch_Statement" LowerBound="344.1" HigherBound="409.1">
+                            <om:Property Name="InitializedTransactionType" Value="True" />
+                            <om:Property Name="IsSynchronized" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Scope_Delivery" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="6385c7eb-6231-4a6f-b55c-6d1d7be41b56" ParentLink="ComplexStatement_Statement" LowerBound="356.1" HigherBound="362.1">
+                                <om:Property Name="Expression" Value="xDoc = new System.Xml.XmlDocument();&#xD;&#xA;xDoc = msgSalesforceComposite;&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;msgSalesforceComposite:&quot; + xDoc.InnerXml , ProcessId);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Log" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Send" OID="896dcefd-51eb-4eb8-a27e-592f75827843" ParentLink="ComplexStatement_Statement" LowerBound="362.1" HigherBound="364.1">
+                                <om:Property Name="PortName" Value="CompositeSF" />
+                                <om:Property Name="MessageName" Value="msgSalesforceComposite" />
+                                <om:Property Name="OperationName" Value="CompositePatch" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="SendUpdateAction" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="db0fec97-7a5b-4c0f-91dd-22772f22a48a" ParentLink="ComplexStatement_Statement" LowerBound="364.1" HigherBound="366.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="CompositeSF" />
+                                <om:Property Name="MessageName" Value="msgSalesforceCompositeRes" />
+                                <om:Property Name="OperationName" Value="CompositePatch" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Receive_SalesforceRes" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="5b2545be-0aaa-4e57-ada8-e5a5f56a3dd9" ParentLink="ComplexStatement_Statement" LowerBound="366.1" HigherBound="372.1">
+                                <om:Property Name="Expression" Value="xDoc = new System.Xml.XmlDocument();&#xD;&#xA;xDoc = msgSalesforceCompositeRes;&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;msgSalesforceCompositeRes:&quot; + xDoc.InnerXml , ProcessId);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Log" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Task" OID="c724b1ae-68d2-4393-bd85-9b6e77f004d2" ParentLink="ComplexStatement_Statement" LowerBound="372.1" HigherBound="386.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Group_ValidateResponse" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="4b09750f-62e4-4f95-87db-a795db6be029" ParentLink="ComplexStatement_Statement" LowerBound="372.1" HigherBound="386.1">
+                                    <om:Property Name="Expression" Value="&#xD;&#xA;//Check error&#xD;&#xA;&#xD;&#xA;errorCount = xpath(msgSalesforceCompositeRes, &quot;count(/*[local-name()='PostOrPatchResponse' and namespace-uri()='http://BBB.ESB.Atlas.Loans.Common.Schemas.SalesforceCompositeAPI']/*[local-name()='compositeResponse' and namespace-uri()=''][starts-with(httpStatusCode,'4')])&quot;);&#xD;&#xA;&#xD;&#xA;if(errorCount &gt; 0)&#xD;&#xA;{&#xD;&#xA;    throw new System.Exception(&quot;Error has occured communicating salesforce, No records are created/updated&quot;);&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace(Process, &quot;Successfully updated Salesforce&quot; , ProcessId);    &#xD;&#xA;}" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Log Message" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageDeclaration" OID="3f14c96a-20ca-47ce-8e09-6beed9a9da95" ParentLink="Scope_MessageDeclaration" LowerBound="347.1" HigherBound="348.1">
+                                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                                <om:Property Name="ParamDirection" Value="In" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="XmlSoapMsg" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="VariableDeclaration" OID="2ba22368-b8a9-4c90-af71-ce4210de816a" ParentLink="Scope_VariableDeclaration" LowerBound="348.1" HigherBound="349.1">
+                                <om:Property Name="UseDefaultConstructor" Value="False" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="ParamDirection" Value="In" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="strSoapXml" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="VariableDeclaration" OID="102c575a-38dd-46b1-a501-9415eef0b5e4" ParentLink="Scope_VariableDeclaration" LowerBound="349.1" HigherBound="350.1">
+                                <om:Property Name="UseDefaultConstructor" Value="True" />
+                                <om:Property Name="Type" Value="System.Web.Services.Protocols.SoapException" />
+                                <om:Property Name="ParamDirection" Value="In" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="soapExc" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="VariableDeclaration" OID="51d6ee6a-4fbd-4cbb-8764-287c94efdb20" ParentLink="Scope_VariableDeclaration" LowerBound="350.1" HigherBound="351.1">
+                                <om:Property Name="UseDefaultConstructor" Value="False" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="ParamDirection" Value="In" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="strNACKErrorDesc" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Catch" OID="5ae801e6-a665-4838-a11f-bd196a6a03b1" ParentLink="Scope_Catch" LowerBound="389.1" HigherBound="407.1">
+                                <om:Property Name="ExceptionName" Value="wcfdelFailExc" />
+                                <om:Property Name="ExceptionType" Value="Microsoft.XLANGs.BaseTypes.DeliveryFailureException" />
+                                <om:Property Name="IsFaultMessage" Value="False" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Catch_DeliveryException" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Construct" OID="f55b6c04-0f81-4fdb-bcf7-89d19478fd74" ParentLink="Catch_Statement" LowerBound="392.1" HigherBound="401.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct_SoapException" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageAssignment" OID="2242f579-d032-457e-95b8-dc6a874d11bd" ParentLink="ComplexStatement_Statement" LowerBound="395.1" HigherBound="400.1">
+                                        <om:Property Name="Expression" Value="XmlSoapMsg = new System.Xml.XmlDocument();&#xD;&#xA;soapExc = (System.Web.Services.Protocols.SoapException)wcfdelFailExc.InnerException;&#xD;&#xA;strSoapXml = soapExc.Detail.InnerXml; &#xD;&#xA;XmlSoapMsg.LoadXml(strSoapXml);&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="245fe7fb-f3cc-465c-9425-91f81fa22458" ParentLink="Construct_MessageRef" LowerBound="393.47" HigherBound="393.57">
+                                        <om:Property Name="Ref" Value="XmlSoapMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="edc85251-a219-4724-bf20-c904437f4353" ParentLink="Catch_Statement" LowerBound="401.1" HigherBound="406.1">
+                                    <om:Property Name="Expression" Value="&#xD;&#xA;strNACKErrorDesc = xpath(XmlSoapMsg,&quot;string(/*[local-name()='NACK' and namespace-uri()='http://schema.microsoft.com/BizTalk/2003/NACKMessage.xsd']/*[local-name()='ErrorDescription' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;throw new System.Exception(&quot;Error has occured sending IntegrationAction in Salesforce. Exception details: &quot; + strNACKErrorDesc);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ThrowNACKerror" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="c1c2afd1-0a44-4b47-8e7e-748e8999656c" ParentLink="Catch_Statement" LowerBound="409.1" HigherBound="413.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace(&#xD;&#xA;Process, &quot;Exception in UMI Process: &quot; + Ex.Message , ProcessId);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Log exception" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="4b31e14a-d6f6-44f0-b470-a39e87f24017" ParentLink="Catch_Statement" LowerBound="413.1" HigherBound="434.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;objEmailAlert.BizTalkProcessID = ProcessId;&#xD;&#xA;objEmailAlert.IntegrationType = &quot;Saleforce To Post Loan support Partner&quot;;&#xD;&#xA;objEmailAlert.ErrorDateTime = System.DateTime.Now;&#xD;&#xA;objEmailAlert.ErrorDescription = Ex.Message;&#xD;&#xA;objEmailAlert.MessageContent = triggerReq;&#xD;&#xA;objEmailAlert.OrchestrationName = Process;&#xD;&#xA;objEmailAlert.ProcessingServerName = System.Environment.MachineName;&#xD;&#xA;&#xD;&#xA;//objEmailAlert.C = &#xD;&#xA;        //BBB.ESB.BTS.Components.Interface.Utilities.Helper.GetUriFullPath(BBB.ESB.BTS.Components.Interface.Utilities.Config.GetStringConfigValue(&quot;Salesforce.AuthEndpoint&quot;))&#xD;&#xA;         //    + strApplicationId;&#xD;&#xA;objEmailAlert.IntegrationActionUrl = &#xD;&#xA;        BBB.ESB.BTS.Components.Interface.Utilities.Helper.GetUriFullPath(BBB.ESB.BTS.Components.Interface.Utilities.Config.GetStringConfigValue(&quot;Salesforce.AuthEndpoint&quot;))&#xD;&#xA;            + IntegrationActionId;&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.SMTP.SendErrorEmail&#xD;&#xA;(&quot;PLS Partner - &quot; + PLSPartnerName + &quot; &quot; + strPLSEventId, objEmailAlert);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendErrorEmail" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="b4c28a6f-e678-42dc-a6d4-ed435f533dbb" ParentLink="Catch_Statement" LowerBound="434.1" HigherBound="437.1">
+                            <om:Property Name="Expression" Value="BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace &#xD;&#xA;(Process, &quot;end&quot;, ProcessId);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Log end" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="cc1bc567-6f88-4425-bfee-983f00d59ae3" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="39.1" HigherBound="41.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.PLS.Customer.ReceiveCustomerDetailsOnewayTrigger" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveCustomerDetailsTriggerPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c24f1870-7861-4cba-9f80-825d513d19bf" ParentLink="PortDeclaration_CLRAttribute" LowerBound="39.1" HigherBound="40.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="74a50a4c-56e0-4d9d-95fc-0390aedd9afa" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="41.1" HigherBound="43.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="51" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.PLS.Customer.TransferCustomer_PortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendPLSCustomer_Port" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="694d9d9b-7ac0-43eb-bc03-61e40ab20c33" ParentLink="PortDeclaration_CLRAttribute" LowerBound="41.1" HigherBound="42.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a9c67ba3-8082-4fb2-9cb8-bb0f2764793a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="43.1" HigherBound="45.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="57" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.PLS.Customer.GetPLSUniqueID_PortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetPLSUniqueID" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="331aeaf4-83e3-4e5c-9936-5954d7d627de" ParentLink="PortDeclaration_CLRAttribute" LowerBound="43.1" HigherBound="44.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="07a92256-2d38-4c79-897a-6d519a297b07" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="45.1" HigherBound="47.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="153" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.PLS.Customer.SalesforeRestPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CompositeSF" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="3244508f-09d9-424e-b4a8-74a25bda0251" ParentLink="PortDeclaration_CLRAttribute" LowerBound="45.1" HigherBound="46.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="CorrelationType" OID="92756040-a767-4fad-8f0b-490a2511e930" ParentLink="Module_CorrelationType" LowerBound="32.1" HigherBound="36.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CorrelationType_PLSPartner" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PropertyRef" OID="9c139ed6-0d1c-40a9-a287-5a1fb957e261" ParentLink="CorrelationType_PropertyRef" LowerBound="34.9" HigherBound="34.52">
+                <om:Property Name="Ref" Value="BBB.ESB.Atlas.PLS.Common.Schemas.PLSPartner" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PropertyRef_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="PropertyRef" OID="cbbb80bb-e52e-47e9-9949-b3b37d49d5c1" ParentLink="CorrelationType_PropertyRef" LowerBound="34.54" HigherBound="34.96">
+                <om:Property Name="Ref" Value="BBB.ESB.Atlas.PLS.Common.Schemas.ProcessID" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PropertyRef_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BBB.ESB.Atlas.PLS.Customer
+{
+    internal porttype ReceiveCustomerDetailsOnewayTrigger
+    {
+        requestresponse ReceiveCustomerDetailsTrigger
+        {
+            BBB.ESB.Atlas.Loans.Common.Schemas.APIRequest, System.Xml.XmlDocument
+        };
+    };
+    internal porttype TransferCustomer_PortType
+    {
+        oneway TransferCustomer
+        {
+            BBB.ESB.Atlas.Loans.Common.Schemas.APIRequest
+        };
+    };
+    internal porttype GetPLSUniqueID_PortType
+    {
+        oneway ReturnPLSID
+        {
+            BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical
+        };
+    };
+    internal porttype SalesforeRestPortType
+    {
+        requestresponse CompositePatch
+        {
+            BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCompositeAPI.PostOrPatch, System.Xml.XmlDocument
+        };
+    };
+    internal correlationtype CorrelationType_PLSPartner
+    {
+        BBB.ESB.Atlas.PLS.Common.Schemas.PLSPartner, BBB.ESB.Atlas.PLS.Common.Schemas.ProcessID
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service OnRamp_TransferCustomer
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ReceiveCustomerDetailsOnewayTrigger ReceiveCustomerDetailsTriggerPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses TransferCustomer_PortType SendPLSCustomer_Port;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port implements GetPLSUniqueID_PortType GetPLSUniqueID;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SalesforeRestPortType CompositeSF;
+        correlation CorrelationType_PLSPartner Correlation_PLSPartner;
+        message BBB.ESB.Atlas.Loans.Common.Schemas.APIRequest msgOnRampRequest;
+        message System.Xml.XmlDocument msgOnRampResponse;
+        message BBB.ESB.Atlas.Loans.Common.Schemas.APIRequest msgOnRampRequestCopy;
+        message BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical msgSalesforceCanonical;
+        message BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCompositeAPI.PostOrPatch msgSalesforceComposite;
+        message System.Xml.XmlDocument msgSalesforceCompositeRes;
+        System.Xml.XmlDocument xDoc;
+        System.String Process;
+        System.String ProcessId;
+        System.DateTime dtQueryExecutionDate;
+        System.String strContactId;
+        System.String strPLSEventId;
+        System.String PLSPartnerName;
+        BBB.ESB.BTS.Components.Interface.Utilities.EmailAlert objEmailAlert;
+        System.String triggerReq;
+        System.String IntegrationActionId;
+        System.String strPLSCustomerReq;
+        System.Xml.XmlDocument xPLSCustomerReq;
+        System.String strPLSDebugLog;
+        System.String strSFUpdateStatus;
+        System.String strPLSCustomerRes;
+        System.Xml.XmlDocument xPLSCustomerRes;
+        System.Int32 errorCount;
+        System.Exception baseExec;
+        System.String FaultMsg;
+        System.String isPLSPResponseSuccess;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dd105591-f0c0-4239-acb4-71ad64856798")]
+            activate receive (ReceiveCustomerDetailsTriggerPort.ReceiveCustomerDetailsTrigger, msgOnRampRequest);
+            xDoc = new System.Xml.XmlDocument();
+            Process = "";
+            ProcessId = "";
+            strContactId = "";
+            strPLSEventId = "";
+            PLSPartnerName = "";
+            objEmailAlert = new BBB.ESB.BTS.Components.Interface.Utilities.EmailAlert();
+            triggerReq = "";
+            IntegrationActionId = "";
+            strPLSCustomerReq = "";
+            xPLSCustomerReq = new System.Xml.XmlDocument();
+            strPLSDebugLog = "";
+            strSFUpdateStatus = "";
+            strPLSCustomerRes = "";
+            xPLSCustomerRes = new System.Xml.XmlDocument();
+            baseExec = new System.Exception();
+            FaultMsg = "";
+            isPLSPResponseSuccess = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("18689b59-7cdc-48cf-b258-def4ee946ae6")]
+            Process = "BBB.ESB.Atlas.PLS.Customer.OnRamp_RestTrigger";
+            ProcessId = BBB.ESB.BTS.Components.Interface.Utilities.Log.GenerateNewProcessId ();
+            
+            BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+            (Process, "start", ProcessId);
+            
+            xDoc = msgOnRampRequest;
+            
+            BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+            (Process, "msgOnRampRequest:" + xDoc.InnerXml , ProcessId);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ee1306e8-23de-483c-8e75-87b2ea5ea6cd")]
+            construct msgOnRampResponse
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("695e4f68-dad7-4730-98eb-610cc3c8e058")]
+                xDoc = new System.Xml.XmlDocument();
+                xDoc.LoadXml("<message><status>success</status></message>");
+                
+                msgOnRampResponse = xDoc;
+                msgOnRampResponse(WCF.OutboundHttpStatusCode) = "202";
+                msgOnRampResponse(WCF.OutboundHttpStatusDescription) = "Accepted";
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b7e3c7ab-8145-4346-9436-e73b52c97fa6")]
+            send (ReceiveCustomerDetailsTriggerPort.ReceiveCustomerDetailsTrigger, msgOnRampResponse);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4a999593-a2e2-4d02-bca8-e1c5f6d5f2b2")]
+            
+            dtQueryExecutionDate = System.DateTime.Now;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ef34c18b-ad75-496c-b923-9a570005b4f7")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2a185afb-44c3-4e95-9c3e-58ce7183c571")]
+                    if((System.Boolean) xpath(msgOnRampRequest,  "boolean(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='data' and namespace-uri()='']/*[local-name()='id' and namespace-uri()=''])"))
+                    {
+                        strContactId = (System.String) xpath(msgOnRampRequest,  "string(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='data' and namespace-uri()='']/*[local-name()='id' and namespace-uri()=''])");
+                    }
+                    if((System.Boolean) xpath(msgOnRampRequest,  "boolean(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='data' and namespace-uri()='']/*[local-name()='plsEvent' and namespace-uri()='']/*[local-name()='id' and namespace-uri()=''])"))
+                    {
+                        strPLSEventId = (System.String) xpath(msgOnRampRequest,  "string(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='data' and namespace-uri()='']/*[local-name()='plsEvent' and namespace-uri()='']/*[local-name()='id' and namespace-uri()=''])");
+                    }
+                    if((System.Boolean) xpath(msgOnRampRequest,  "boolean(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='meta' and namespace-uri()='']/*[local-name()='integrationActionId' and namespace-uri()=''])"))
+                    {
+                        IntegrationActionId = (System.String) xpath(msgOnRampRequest,  "string(/*[local-name()='Document' and namespace-uri()='']/*[local-name()='meta' and namespace-uri()='']/*[local-name()='integrationActionId' and namespace-uri()=''])");
+                    }
+                    
+                    BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                    (Process, "ContactId: " + strContactId , ProcessId);
+                    BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                    (Process, "PLS Event Id: " + strPLSEventId , ProcessId);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2164a8e1-13a8-43c7-abf2-11e584ffc017")]
+                    PLSPartnerName = "UMI";
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d9145134-07c5-48ef-933d-aa0d0315f64b")]
+                    construct msgOnRampRequestCopy
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c926a8be-4037-4689-aa07-e1b1d3e5afdf")]
+                        msgOnRampRequestCopy = msgOnRampRequest;
+                        msgOnRampRequestCopy(BBB.ESB.Atlas.PLS.Common.Schemas.PLSPartner)  = PLSPartnerName;
+                        msgOnRampRequestCopy(BBB.ESB.Atlas.PLS.Common.Schemas.ProcessID) = ProcessId;
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ef9c531a-1a1f-4642-95d9-c2f77d9eb41f")]
+                    send (SendPLSCustomer_Port.TransferCustomer, msgOnRampRequestCopy, initialize Correlation_PLSPartner);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2444d160-0a67-4c5c-8467-bd22dc17236e")]
+                    receive (GetPLSUniqueID.ReturnPLSID, msgSalesforceCanonical, Correlation_PLSPartner);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("fc830e76-be18-434f-89fc-37b9120e42bd")]
+                    //Check node existance
+                    if((System.Boolean) xpath(msgSalesforceCanonical, "boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSDebugLog' and namespace-uri()=''])") == true)
+                    {
+                        strPLSDebugLog = xpath(msgSalesforceCanonical, "string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSDebugLog' and namespace-uri()=''])");
+                    }
+                    //Check node existance
+                    if((System.Boolean) xpath(msgSalesforceCanonical, "boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSPUniqueId' and namespace-uri()=''])") == true)
+                    {
+                        if(System.String.IsNullOrEmpty(strSFUpdateStatus.Trim()))
+                            {
+                                strSFUpdateStatus = xpath(msgSalesforceCanonical, "string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSPUniqueId' and namespace-uri()=''])");
+                            }
+                        else
+                            {
+                                strSFUpdateStatus = (System.String) xpath(msgSalesforceCanonical, "string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PLSPUniqueId' and namespace-uri()=''])") + System.Environment.NewLine + System.Environment.NewLine + strSFUpdateStatus;
+                            }
+                    }
+                    
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("efe43575-86c1-4792-b80d-07b16a7d8d14")]
+                    
+                    //Read request from response
+                    //Check node existance
+                    if((System.Boolean) xpath(msgSalesforceCanonical, "boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='Request' and namespace-uri()=''])") == true)
+                    {
+                    strPLSCustomerReq = xpath(msgSalesforceCanonical, "string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='Request' and namespace-uri()=''])");
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b2cfbd0c-7fd3-49cb-a9aa-1bba8763da0b")]
+                    //Read request from response
+                    //Check node existance
+                    if((System.Boolean) xpath(msgSalesforceCanonical, "boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='IsSuccess' and namespace-uri()=''])") == true)
+                    {
+                        isPLSPResponseSuccess = xpath(msgSalesforceCanonical, "string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='IsSuccess' and namespace-uri()=''])");
+                    }
+                    //Check node existance
+                    if((System.Boolean) xpath(msgSalesforceCanonical, "boolean(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PayLoad' and namespace-uri()=''])") == true)
+                    {
+                    strPLSCustomerRes = xpath(msgSalesforceCanonical, "string(/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='PLSCustomerResponse' and namespace-uri()='']/*[local-name()='PayLoad' and namespace-uri()=''])");
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("22bdc74d-1418-48e6-ab6a-f2a9f5591d5c")]
+                    if (isPLSPResponseSuccess == "Completed Success")
+                    {
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c2a997a2-2394-41f2-8c0b-7dc60b45a5d2")]
+                        
+                        //strNACKErrorDesc = xpath(XmlSoapMsg,"string(/*[local-name()='NACK' and namespace-uri()='http://schema.microsoft.com/BizTalk/2003/NACKMessage.xsd']/*[local-name()='ErrorDescription' and namespace-uri()=''])");
+                        
+                        throw new System.Exception("Error has occured sending customer details to PLSP. Exception details: " + strPLSCustomerRes);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("32d36c8a-a5c5-4207-9a9f-8c1224cdb6f3")]
+                    xDoc = new System.Xml.XmlDocument();
+                    xDoc = msgSalesforceCanonical;
+                    
+                    BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                    (Process, "msgSalesforceCanonical:" + xDoc.InnerXml , ProcessId);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5b9291fe-9b16-4caa-9679-13a1845b2266")]
+                    construct msgSalesforceComposite
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2c4d403a-f687-4f93-a23e-39f0efae9116")]
+                        transform (msgSalesforceComposite) = BBB.ESB.Atlas.PLS.Customer.Maps.SFCanonical_To_SFCompositeReq (msgSalesforceCanonical);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7d46763a-1064-4ad1-9665-c62f53c71330")]
+                    scope
+                    {
+                        message System.Xml.XmlDocument XmlSoapMsg;
+                        System.String strSoapXml;
+                        System.String strNACKErrorDesc;
+                        System.Web.Services.Protocols.SoapException soapExc;
+                        body
+                        {
+                            strSoapXml = "";
+                            strNACKErrorDesc = "";
+                            soapExc = new System.Web.Services.Protocols.SoapException();
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e02365e7-a0f9-474c-a4ac-eeea1c1f19c9")]
+                            xDoc = new System.Xml.XmlDocument();
+                            xDoc = msgSalesforceComposite;
+                            
+                            BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                            (Process, "msgSalesforceComposite:" + xDoc.InnerXml , ProcessId);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("64f99563-2b7c-46ee-8b45-7047671c9a52")]
+                            send (CompositeSF.CompositePatch, msgSalesforceComposite);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4976c136-79c5-455d-9185-84a9b121814f")]
+                            receive (CompositeSF.CompositePatch, msgSalesforceCompositeRes);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("02feb542-3543-4352-b506-a93467949040")]
+                            xDoc = new System.Xml.XmlDocument();
+                            xDoc = msgSalesforceCompositeRes;
+                            
+                            BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                            (Process, "msgSalesforceCompositeRes:" + xDoc.InnerXml , ProcessId);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3e854cda-dada-4222-9688-35a0c0949e59")]
+                            
+                            //Check error
+                            
+                            errorCount = xpath(msgSalesforceCompositeRes, "count(/*[local-name()='PostOrPatchResponse' and namespace-uri()='http://BBB.ESB.Atlas.Loans.Common.Schemas.SalesforceCompositeAPI']/*[local-name()='compositeResponse' and namespace-uri()=''][starts-with(httpStatusCode,'4')])");
+                            
+                            if(errorCount > 0)
+                            {
+                                throw new System.Exception("Error has occured communicating salesforce, No records are created/updated");
+                            }
+                            else
+                            {
+                                BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace(Process, "Successfully updated Salesforce" , ProcessId);    
+                            }
+                        }
+                        exceptions
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("688154f4-dfb9-45f6-ad15-17d42dede81a")]
+                            catch (Microsoft.XLANGs.BaseTypes.DeliveryFailureException wcfdelFailExc)
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("34272497-af05-45f2-8c78-1fbc2a433e52")]
+                                construct XmlSoapMsg
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b7f28b8e-3fa8-430f-bad0-a1faea9156f8")]
+                                    XmlSoapMsg = new System.Xml.XmlDocument();
+                                    soapExc = (System.Web.Services.Protocols.SoapException)wcfdelFailExc.InnerException;
+                                    strSoapXml = soapExc.Detail.InnerXml; 
+                                    XmlSoapMsg.LoadXml(strSoapXml);
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a6beea36-5622-4b84-b036-79b6f7f087bb")]
+                                
+                                strNACKErrorDesc = xpath(XmlSoapMsg,"string(/*[local-name()='NACK' and namespace-uri()='http://schema.microsoft.com/BizTalk/2003/NACKMessage.xsd']/*[local-name()='ErrorDescription' and namespace-uri()=''])");
+                                
+                                throw new System.Exception("Error has occured sending IntegrationAction in Salesforce. Exception details: " + strNACKErrorDesc);
+                            }
+                        }
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a7349143-5e71-4c70-9ff4-1598215635e1")]
+                    BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                    (Process, "end", ProcessId);
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3ce4d6cc-a8c4-4451-bf07-8de4810f45e1")]
+                    catch (System.Exception Ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("765c3c51-ab4d-43ff-840a-feb0a59c13fe")]
+                        
+                        baseExec = Ex.GetBaseException();
+                        FaultMsg = baseExec.Message;
+                        
+                        BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                        (Process, "FaultMsg: " + FaultMsg , ProcessId);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("74ef5a57-db69-43c0-a12b-c1c2744f2803")]
+                        construct msgSalesforceCanonical
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bf710156-c5ca-4688-a458-0838942c8af0")]
+                            xDoc = new System.Xml.XmlDocument();
+                            
+                            xDoc.LoadXml(@"<ns0:Root xmlns:ns0=""http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical"">
+                              <Integration_Action__c>
+                                <Id></Id>
+                                <Debug_Log__c></Debug_Log__c>    
+                                <Status__c></Status__c>    
+                              </Integration_Action__c>  
+                            </ns0:Root>");
+                            
+                            msgSalesforceCanonical = xDoc;
+                            
+                            //Contact
+                            //Id
+                            //xpath(msgSalesforceCanonical, "/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='Contact' and namespace-uri()='']/*[local-name()='Id' and namespace-uri()='']") = strContactId;
+                            
+                            
+                            //Integration action
+                            //Id
+                            xpath(msgSalesforceCanonical, "/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='Integration_Action__c' and namespace-uri()='']/*[local-name()='Id' and namespace-uri()='']") = IntegrationActionId;
+                            //Status
+                            xpath(msgSalesforceCanonical, "/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='Integration_Action__c' and namespace-uri()='']/*[local-name()='Status__c' and namespace-uri()='']") = "Errors";
+                            //DebugLog
+                            xpath(msgSalesforceCanonical, "/*[local-name()='Root' and namespace-uri()='http://BBB.ESB.Atlas.PLS.Common.Schemas.SalesforceCanonical']/*[local-name()='Integration_Action__c' and namespace-uri()='']/*[local-name()='Debug_Log__c' and namespace-uri()='']") = BBB.ESB.Atlas.PLS.Utilities.PLSPHelper.UpdateIDHubIntActionMessage(strPLSEventId,IntegrationActionId,false,ProcessId,PLSPartnerName,FaultMsg+ System.Environment.NewLine ,null,null,null);
+                            
+                            
+                            msgSalesforceCanonical(BBB.ESB.Atlas.PLS.Common.Schemas.ProcessID) = ProcessId;
+                            msgSalesforceCanonical(BBB.ESB.Atlas.PLS.Common.Schemas.PLSPartner) = PLSPartnerName;
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("beb272c0-3c2e-4d61-9dcb-bec3af7eda40")]
+                        construct msgSalesforceComposite
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("132b9e53-80ea-4ba8-92c9-7f5b28e6395d")]
+                            transform (msgSalesforceComposite) = BBB.ESB.Atlas.PLS.Customer.Maps.SFCanonical_To_SFCompositeReq (msgSalesforceCanonical);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2985f29f-fabb-4881-905c-f064a92577e2")]
+                        scope
+                        {
+                            message System.Xml.XmlDocument XmlSoapMsg;
+                            System.String strSoapXml;
+                            System.Web.Services.Protocols.SoapException soapExc;
+                            System.String strNACKErrorDesc;
+                            body
+                            {
+                                strSoapXml = "";
+                                soapExc = new System.Web.Services.Protocols.SoapException();
+                                strNACKErrorDesc = "";
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6385c7eb-6231-4a6f-b55c-6d1d7be41b56")]
+                                xDoc = new System.Xml.XmlDocument();
+                                xDoc = msgSalesforceComposite;
+                                
+                                BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                                (Process, "msgSalesforceComposite:" + xDoc.InnerXml , ProcessId);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("896dcefd-51eb-4eb8-a27e-592f75827843")]
+                                send (CompositeSF.CompositePatch, msgSalesforceComposite);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("db0fec97-7a5b-4c0f-91dd-22772f22a48a")]
+                                receive (CompositeSF.CompositePatch, msgSalesforceCompositeRes);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("5b2545be-0aaa-4e57-ada8-e5a5f56a3dd9")]
+                                xDoc = new System.Xml.XmlDocument();
+                                xDoc = msgSalesforceCompositeRes;
+                                
+                                BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                                (Process, "msgSalesforceCompositeRes:" + xDoc.InnerXml , ProcessId);
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("4b09750f-62e4-4f95-87db-a795db6be029")]
+                                
+                                //Check error
+                                
+                                errorCount = xpath(msgSalesforceCompositeRes, "count(/*[local-name()='PostOrPatchResponse' and namespace-uri()='http://BBB.ESB.Atlas.Loans.Common.Schemas.SalesforceCompositeAPI']/*[local-name()='compositeResponse' and namespace-uri()=''][starts-with(httpStatusCode,'4')])");
+                                
+                                if(errorCount > 0)
+                                {
+                                    throw new System.Exception("Error has occured communicating salesforce, No records are created/updated");
+                                }
+                                else
+                                {
+                                    BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace(Process, "Successfully updated Salesforce" , ProcessId);    
+                                }
+                            }
+                            exceptions
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("5ae801e6-a665-4838-a11f-bd196a6a03b1")]
+                                catch (Microsoft.XLANGs.BaseTypes.DeliveryFailureException wcfdelFailExc)
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f55b6c04-0f81-4fdb-bcf7-89d19478fd74")]
+                                    construct XmlSoapMsg
+                                    {
+                                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2242f579-d032-457e-95b8-dc6a874d11bd")]
+                                        XmlSoapMsg = new System.Xml.XmlDocument();
+                                        soapExc = (System.Web.Services.Protocols.SoapException)wcfdelFailExc.InnerException;
+                                        strSoapXml = soapExc.Detail.InnerXml; 
+                                        XmlSoapMsg.LoadXml(strSoapXml);
+                                    }
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("edc85251-a219-4724-bf20-c904437f4353")]
+                                    
+                                    strNACKErrorDesc = xpath(XmlSoapMsg,"string(/*[local-name()='NACK' and namespace-uri()='http://schema.microsoft.com/BizTalk/2003/NACKMessage.xsd']/*[local-name()='ErrorDescription' and namespace-uri()=''])");
+                                    
+                                    throw new System.Exception("Error has occured sending IntegrationAction in Salesforce. Exception details: " + strNACKErrorDesc);
+                                }
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c1c2afd1-0a44-4b47-8e7e-748e8999656c")]
+                        
+                        BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace(
+                        Process, "Exception in UMI Process: " + Ex.Message , ProcessId);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4b31e14a-d6f6-44f0-b470-a39e87f24017")]
+                        
+                        objEmailAlert.BizTalkProcessID = ProcessId;
+                        objEmailAlert.IntegrationType = "Saleforce To Post Loan support Partner";
+                        objEmailAlert.ErrorDateTime = System.DateTime.Now;
+                        objEmailAlert.ErrorDescription = Ex.Message;
+                        objEmailAlert.MessageContent = triggerReq;
+                        objEmailAlert.OrchestrationName = Process;
+                        objEmailAlert.ProcessingServerName = System.Environment.MachineName;
+                        
+                        //objEmailAlert.C = 
+                                //BBB.ESB.BTS.Components.Interface.Utilities.Helper.GetUriFullPath(BBB.ESB.BTS.Components.Interface.Utilities.Config.GetStringConfigValue("Salesforce.AuthEndpoint"))
+                                 //    + strApplicationId;
+                        objEmailAlert.IntegrationActionUrl = 
+                                BBB.ESB.BTS.Components.Interface.Utilities.Helper.GetUriFullPath(BBB.ESB.BTS.Components.Interface.Utilities.Config.GetStringConfigValue("Salesforce.AuthEndpoint"))
+                                    + IntegrationActionId;
+                        
+                        BBB.ESB.BTS.Components.Interface.Utilities.SMTP.SendErrorEmail
+                        ("PLS Partner - " + PLSPartnerName + " " + strPLSEventId, objEmailAlert);
+                        
+                        
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b4c28a6f-e678-42dc-a6d4-ed435f533dbb")]
+                        BBB.ESB.BTS.Components.Interface.Utilities.Log.WriteTrace 
+                        (Process, "end", ProcessId);
+                    }
+                }
+            }
+        }
+    }
+}
+

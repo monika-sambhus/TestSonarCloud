@@ -1,0 +1,248 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="250d2115-03ab-4449-ad53-760328e8dcbf" LowerBound="1.1" HigherBound="49.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BBB.ESB.Atlas.PLS.Mentoring" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="941e2306-e3df-4824-a3df-1c3f21beed7c" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="6.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9749776d-0540-4bf0-a02e-0ea5806c1a7b" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c58d15fd-6c5c-4241-b14a-b9b3301bbca9" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="9e454961-e5cb-4595-8bb0-2df2f9ca1737" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="83cf3325-089e-47c2-abf6-1c69c90f18bc" ParentLink="Module_PortType" LowerBound="6.1" HigherBound="8.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="13442b60-107f-4b84-bc6f-0e7d8e8b4a14" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="48fe5d77-8032-41ea-bd8b-dd41c548bda4" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="e047c389-3f11-469b-ab54-e7758b9d3071" ParentLink="Module_ServiceDeclaration" LowerBound="8.1" HigherBound="48.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SessionProcessor" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="ee5411a1-65d1-44f8-acf0-4162cb6a825f" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="4b2a5fbd-a68a-4717-8309-0ae79376296c" ParentLink="ServiceBody_Statement" LowerBound="17.1" HigherBound="19.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Task" OID="fca30962-395b-430e-8c49-dafcdc1a56c6" ParentLink="ServiceBody_Statement" LowerBound="19.1" HigherBound="27.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Group_Salesforce" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="5d9c4d82-7a0d-455f-ba55-a6594d0a438e" ParentLink="ComplexStatement_Statement" LowerBound="19.1" HigherBound="23.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Xform_Req_To_SFReq" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="8cbb0d2b-ab6f-488e-8049-99a7f2c3cb52" ParentLink="ComplexStatement_Statement">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Transform_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="c2a1329a-7d6c-42e9-b9c1-bf33fad41bcb" ParentLink="ComplexStatement_Statement" LowerBound="23.1" HigherBound="25.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send_3" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="3c7b9f9e-ff30-472b-878c-ecd9dd2f9d3a" ParentLink="ComplexStatement_Statement" LowerBound="25.1" HigherBound="27.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive_2" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Decision" OID="8acefe27-0d51-4522-a1b4-d768f41fe42d" ParentLink="ServiceBody_Statement" LowerBound="27.1" HigherBound="46.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ErrorOccrured?" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="0109c289-107c-4359-a332-772c1fbf2dc8" ParentLink="ReallyComplexStatement_Branch" LowerBound="28.13" HigherBound="37.1">
+                        <om:Property Name="Expression" Value="!IsSuccess" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Yes" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="48c68548-14b8-4767-911f-dd9ed8b3a17a" ParentLink="ComplexStatement_Statement" LowerBound="30.1" HigherBound="32.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;&#xD;&#xA;objEmailAlert.BizTalkProcessID = ProcessId;&#xD;&#xA;objEmailAlert.IntegrationType = &quot;Finance Partner To Salesforce&quot;;&#xD;&#xA;objEmailAlert.ErrorDateTime = System.DateTime.Now;&#xD;&#xA;objEmailAlert.ErrorDescription = errorDescription;&#xD;&#xA;objEmailAlert.MessageContent = triggerReq;&#xD;&#xA;objEmailAlert.OrchestrationName = Process;&#xD;&#xA;objEmailAlert.ProcessingServerName = System.Environment.MachineName;&#xD;&#xA;objEmailAlert.LoanUrl = &#xD;&#xA;        BBB.ESB.BTS.Components.Interface.Utilities.Helper.GetUriFullPath(BBB.ESB.BTS.Components.Interface.Utilities.Config.GetStringConfigValue(&quot;Salesforce.AuthEndpoint&quot;))&#xD;&#xA;              + SulcoCRMId;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;BBB.ESB.BTS.Components.Interface.Utilities.SMTP.SendErrorEmail&#xD;&#xA;(&quot;Finance Partner Status Update &quot; + SulcoCRMId, objEmailAlert);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendErrorEmail" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="637d3678-a684-4ade-b3ed-bbb3aa48dd67" ParentLink="ComplexStatement_Statement" LowerBound="32.1" HigherBound="34.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_LoanResponse" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="13aa9355-b7db-4f51-9365-60a03cdd14e1" ParentLink="Construct_MessageRef">
+                                <om:Property Name="Ref" Value="msgLoanStatusResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="442656da-5b2a-4585-9be8-5d3fb877dc07" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="Expression" Value="xDoc.LoadXml(@&quot;&lt;ns0:LoanStatusResponse xmlns:ns0=&quot;&quot;http://BBB.ESB.BTS.BizTalk.Interface.FinancePartner.LoadStatusUpdate&quot;&quot;&gt;&#xD;&#xA;  &lt;SULCO_CRM_ID&gt;&lt;/SULCO_CRM_ID&gt;&#xD;&#xA;  &lt;Status&gt;&lt;/Status&gt;&#xD;&#xA;  &lt;Message&gt;&lt;/Message&gt;&#xD;&#xA;&lt;/ns0:LoanStatusResponse&gt;&quot;);&#xD;&#xA;&#xD;&#xA;msgLoanStatusResponse = new System.Xml.XmlDocument();&#xD;&#xA;msgLoanStatusResponse = xDoc;&#xD;&#xA;msgLoanStatusResponse.SULCO_CRM_ID = SulcoCRMId;&#xD;&#xA;msgLoanStatusResponse.Message = &quot;Loan updated failed. Reason : &quot; + errorDescription;&#xD;&#xA;msgLoanStatusResponse.Status = &quot;Failed&quot;;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="787f975f-3e47-479a-b9b9-6535a2d3ef46" ParentLink="ComplexStatement_Statement" LowerBound="34.1" HigherBound="36.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="057e0340-f890-4d7c-9c8e-6e169653cfed" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="731b861e-6b8c-477a-9dc1-fe0248666d5c" ParentLink="ComplexStatement_Statement" LowerBound="39.1" HigherBound="41.1">
+                            <om:Property Name="Expression" Value="if(System.String.IsNullOrEmpty(SulcoStatus))&#xD;&#xA;{&#xD;&#xA;    Result  = &quot;Salesforce record update successful. Status update ignored!&quot;;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    Result = &quot;Salesforce record update successful.&quot;;&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Result" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="91eeb550-d46f-4527-99e7-86c9af2ac5f5" ParentLink="ComplexStatement_Statement" LowerBound="41.1" HigherBound="43.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct_LoanResponse" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="93d6983e-116d-480d-8e00-8d504dc2003c" ParentLink="Construct_MessageRef">
+                                <om:Property Name="Ref" Value="msgLoanStatusResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="775808a1-a555-40b6-861b-fe4ea73ca031" ParentLink="ComplexStatement_Statement">
+                                <om:Property Name="Expression" Value="&#xD;&#xA;xDoc.LoadXml(@&quot;&lt;ns0:LoanStatusResponse xmlns:ns0=&quot;&quot;http://BBB.ESB.BTS.BizTalk.Interface.FinancePartner.LoadStatusUpdate&quot;&quot;&gt;&#xD;&#xA;  &lt;SULCO_CRM_ID&gt;&lt;/SULCO_CRM_ID&gt;&#xD;&#xA;  &lt;Status&gt;&lt;/Status&gt;&#xD;&#xA;  &lt;Message&gt;&lt;/Message&gt;&#xD;&#xA;&lt;/ns0:LoanStatusResponse&gt;&quot;);&#xD;&#xA;&#xD;&#xA;msgLoanStatusResponse = new System.Xml.XmlDocument();&#xD;&#xA;msgLoanStatusResponse = xDoc;&#xD;&#xA;&#xD;&#xA;msgLoanStatusResponse.SULCO_CRM_ID = SulcoCRMId;&#xD;&#xA;msgLoanStatusResponse.Message = Result;&#xD;&#xA;msgLoanStatusResponse.Status = &quot;Success&quot;;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="e51d56d7-d455-4962-a8da-22c10e3b5c04" ParentLink="ComplexStatement_Statement" LowerBound="43.1" HigherBound="45.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="993bb0c0-bf67-4738-8a11-ff9fa0aad790" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="11.1" HigherBound="13.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.PLS.Mentoring.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="5396c7f7-2637-44af-b2fe-17afab6f9142" ParentLink="PortDeclaration_CLRAttribute" LowerBound="11.1" HigherBound="12.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c13858db-41cf-4951-ade0-978aa5b15498" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="13.1" HigherBound="15.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BBB.ESB.Atlas.PLS.Mentoring.PortType_2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_2" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2951727d-407a-4f6c-8e63-ec091c3b655d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="13.1" HigherBound="14.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BBB.ESB.Atlas.PLS.Mentoring
+{
+
+#error "Errors exist for one or more children."
+
+#error "Errors exist for one or more children."
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service SessionProcessor
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_1 Port_1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_2 Port_2;
+        body ()
+        {
+
+#error "No Message."
+
+#error "No Constructed Messages."
+
+#error "Errors exist for one or more children."
+
+#error "No Message."
+
+#error "No Message."
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8acefe27-0d51-4522-a1b4-d768f41fe42d")]
+            if (!IsSuccess)
+            {
+
+#error "The expression that you have entered is not valid"
+
+#error "Message 'msgLoanStatusResponse' does not exist or is not valid."
+
+#error "No Message."
+            }
+            else 
+            {
+
+#error "The expression that you have entered is not valid"
+
+#error "Message 'msgLoanStatusResponse' does not exist or is not valid."
+
+#error "No Message."
+            }
+        }
+    }
+}
+

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Deployment Framework for BizTalk
+  Copyright (C) Thomas F. Abraham, Scott Colestock
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Installer">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">x86</Platform>
+    <SchemaVersion>1.0</SchemaVersion>
+    <ProjectName>BBB.ESB.Atlas.PLS</ProjectName>
+    <ProjectVersion>1.0</ProjectVersion>
+    <IncludeSSO>True</IncludeSSO>
+    <UsingMasterBindings>True</UsingMasterBindings>
+    <RequireXmlPreprocessDirectives>False</RequireXmlPreprocessDirectives>
+    <ApplyXmlEscape>True</ApplyXmlEscape>
+
+    <IncludeSSO>False</IncludeSSO>
+    <IncludeTransforms>False</IncludeTransforms>
+    <IncludeSchemas>True</IncludeSchemas>
+    <IncludeOrchestrations>False</IncludeOrchestrations>
+
+    <IncludeComponents>True</IncludeComponents>
+
+    <!--TODO to be changed-->
+    <IncludePipelineComponents>false</IncludePipelineComponents>
+    <IncludePipelines>false</IncludePipelines>
+
+    <UsingMasterBindings>True</UsingMasterBindings>
+    <SkipIISReset>True</SkipIISReset>
+    <SkipHostInstancesRestart>False</SkipHostInstancesRestart>
+    <!--<ApplyXmlEscape>True</ApplyXmlEscape>-->
+    <IncludeVirtualDirectories>False</IncludeVirtualDirectories>
+    <!--MNG: not working atm-->
+    <ModifyNTFSPermissionsOnVDirPaths>False</ModifyNTFSPermissionsOnVDirPaths>
+    <BizTalkAppDescription>$(ProjectName) - Deployed on $([System.DateTime]::Now)</BizTalkAppDescription>
+    <EnableAllReceiveLocationsOnDeploy>False</EnableAllReceiveLocationsOnDeploy>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- Properties related to building an MSI for server deployments -->
+    <!-- BizTalk App Version Upgrade -->
+    <!--   For each new product release to be deployed to your BizTalk servers: -->
+    <!--     1) Increment ProductVersion -->
+    <!--     2) Generate a new GUID and update ProductId with the new GUID -->
+    <!--   This allows the new MSI to automatically uninstall (not undeploy!) the old MSI and install the new one. -->
+    <ProductVersion>1.0.0</ProductVersion>
+    <ProductId>AC67AF12-007F-4B07-8D9E-47B2A492A1C7</ProductId>
+    <!-- BizTalk App Version Upgrade -->
+    <ProductName>BBB.ESB.Atlas.PLS</ProductName>
+    <Manufacturer>British Business Bank</Manufacturer>
+    <PackageDescription>BBB.ESB.Atlas.PLS</PackageDescription>
+    <PackageComments>BBB.ESB.Atlas.PLS for BizTalk $(ProductVersion)</PackageComments>
+    <!-- NEVER change the ProductUpgradeCode. -->
+    <ProductUpgradeCode>2b3edae0-1435-4fb2-ad44-d4d693e80a84</ProductUpgradeCode>
+  </PropertyGroup>
+  <!-- Under TFS Team Build, set CustomizableOutDir property to true in TFS 2005/2008/2010 UpgradeTemplate. -->
+  <!-- With a workflow build, copy the default template then modify the MSBuild task for the solution build. Set OutDir to blank and -->
+  <!-- CommandLineArguments to String.Format("/p:SkipInvalidConfigurations=true;TeamBuildOutDir=""{0}"" {1}", BinariesDirectory, MSBuildArguments). -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DeploymentFrameworkTargetsPath>$(MSBuildExtensionsPath)\DeploymentFrameworkForBizTalk\5.0\</DeploymentFrameworkTargetsPath>
+    <OutputPath Condition="'$(TeamBuildOutDir)' == ''">..\Out</OutputPath>
+    <OutputPath Condition="'$(TeamBuildOutDir)' != ''">$(TeamBuildOutDir)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DeploymentFrameworkTargetsPath>$(MSBuildExtensionsPath)\DeploymentFrameworkForBizTalk\5.0\</DeploymentFrameworkTargetsPath>
+    <OutputPath Condition="'$(TeamBuildOutDir)' == ''">..\Out</OutputPath>
+    <OutputPath Condition="'$(TeamBuildOutDir)' != ''">$(TeamBuildOutDir)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Server'">
+    <DeploymentFrameworkTargetsPath>Framework\</DeploymentFrameworkTargetsPath>
+    <!-- Get our PDBs into the GAC so we get file/line number information in stack traces. -->
+    <DeployPDBsToGac>false</DeployPDBsToGac>
+  </PropertyGroup>
+  <ItemGroup>
+    <PropsFromEnvSettings Include="SsoAppUserGroup;SsoAppAdminGroup" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BizTalkHosts Include="BBBProcessHost" />
+    <BizTalkHosts Include="BBBReceiveHost" />
+    <BizTalkHosts Include="BBBSendHost" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AppsToReference Include="BBB.ESB.BTS" />
+    <AppsToReference Include="BBB.ESB.Atlas.Loans" />
+  </ItemGroup>
+
+  <!-- !!! TODO !!! -->
+  <!-- Add ItemGroup elements that contain one or more Schemas, Orchestrations, Transforms, etc. elements that describe -->
+  <!-- the specific artifacts in your solution that need to be deployed. Use IntelliSense as a guide. -->
+  <ItemGroup>
+    <!--<Components Include="Newtonsoft.Json.dll">
+      <LocationPath>$(OutputPath)</LocationPath>
+    </Components>-->
+
+    <Components Include="BBB.ESB.Atlas.PLS.Utilities.dll">
+      <LocationPath>$(OutputPath)</LocationPath>
+    </Components>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Schemas Include="BBB.ESB.Atlas.PLS.Common.dll">
+      <LocationPath>$(OutputPath)</LocationPath>
+    </Schemas>
+
+    <Schemas Include="BBB.ESB.Atlas.PLS.Mentoring.dll">
+      <LocationPath>$(OutputPath)</LocationPath>
+    </Schemas>
+
+    <Schemas Include="BBB.ESB.Atlas.PLS.Customer.dll">
+      <LocationPath>$(OutputPath)</LocationPath>
+    </Schemas>
+
+    <Schemas Include="BBB.ESB.Atlas.PLS.OnlinePlatform.dll">
+      <LocationPath>$(OutputPath)</LocationPath>
+    </Schemas>
+
+  </ItemGroup>
+  <!-- !!! TODO !!! -->
+  <Import Project="$(DeploymentFrameworkTargetsPath)BizTalkDeploymentFramework.targets" />
+  <!--
+    The Deployment Framework automatically packages most files into the server install MSI.
+    However, if there are special folders that you need to include in the MSI, you can
+    copy them to the folder $(RedistDir) in the CustomRedist target.
+    To include individual files, add an ItemGroup with AdditionalFiles elements.
+  -->
+  <Target Name="CustomRedist">
+  </Target>
+</Project>

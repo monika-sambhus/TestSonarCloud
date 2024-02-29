@@ -1,0 +1,560 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>2014-03-24T21:26:46Z</Created>
+  <LastSaved>2023-05-15T17:45:39Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8120</WindowHeight>
+  <WindowWidth>19200</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s40" ss:Name="40% - Accent1">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#B8CCE4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="40% - Accent1 Bold">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#B8CCE4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s63" ss:Name="Hyperlink">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#0066CC"
+    ss:Underline="Single"/>
+  </Style>
+  <Style ss:ID="s64" ss:Name="Normal Bold">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s65">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s70" ss:Parent="s62">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="16" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s72" ss:Parent="s62">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#B8CCE4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s75" ss:Parent="s40">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#B8CCE4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s79" ss:Parent="s63">
+   <Interior/>
+  </Style>
+  <Style ss:ID="s80">
+   <Interior/>
+  </Style>
+  <Style ss:ID="s81" ss:Parent="s63">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s84" ss:Parent="s63">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Settings">
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="37" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s65" ss:DefaultColumnWidth="44.5"
+   ss:DefaultRowHeight="13.75">
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="205"/>
+   <Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="352"/>
+   <Column ss:StyleID="s68" ss:Width="223"/>
+   <Column ss:StyleID="s68" ss:Width="412"/>
+   <Column ss:StyleID="s68" ss:Width="451.5"/>
+   <Column ss:StyleID="s68" ss:Width="381"/>
+   <Column ss:StyleID="s68" ss:Width="394.5"/>
+   <Column ss:StyleID="s68" ss:Width="449.5" ss:Span="2"/>
+   <Row ss:AutoFitHeight="0" ss:Height="21">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Environment Settings</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Environment Name:</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Default Values</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Local</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Development</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">SIT</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">UAT</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">StagingWest</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">StagingSouth</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">ProductionWest</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">ProductionSouth</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Generate File?</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Yes</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Settings File Name:</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Exported_LocalSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Exported_DevSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Exported_SITSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Exported_UATSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Exported_StagingWestSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Exported_StagingSouthSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Exported_ProdWestSettings.xml</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Exported_ProdSouthSettings.xml</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Settings:</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SsoAppUserGroup</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Application Users</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SsoAppAdminGroup</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk Server Administrators</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ProcessHost</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">BBBProcessHost</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SendHost</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">BBBSendHost</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ReceiveHost</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">BBBReceiveHost</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">IsolatedHost</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">BBBIsolatedHost</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SkipIISReset</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">False</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SkipHostInstancesRestart</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">False</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">IsolatedHostUserName</Data></Cell>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">IsolatedHostUserPassword</Data></Cell>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+   </Row>
+   <Row ss:Index="18" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">SalesForce</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SalesForce.SOQL.URL</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="https://cs105.salesforce.com/services/Soap/u/42.0"><Data
+      ss:Type="String">https://cs105.salesforce.com/services/Soap/u/55.0</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="https://startuploans&#45;-qa.my.salesforce.com/services/Soap/u/49.0"><Data
+      ss:Type="String">https://startuploans&#45;-qa.my.salesforce.com/services/Soap/u/55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://cs85.salesforce.com/services/Soap/u/55.0</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="https://startuploans&#45;-qa.sandbox.my.salesforce.com/services/Soap/u/55.0"><Data
+      ss:Type="String">https://startuploans&#45;-qa.sandbox.my.salesforce.com/services/Soap/u/55.0</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">https://cs106.salesforce.com/services/Soap/u/55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/Soap/u/55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/Soap/u/55.0</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="https://eu18.salesforce.com/services/Soap/u/55.0"><Data
+      ss:Type="String">https://startuploans.my.salesforce.com/services/Soap/u/55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans.my.salesforce.com/services/Soap/u/55.0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SalesForce.Upsert.ContactUser</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://cs105.salesforce.com/services/data/v55.0/sobjects</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="https://startuploans&#45;-qa.my.salesforce.com/services/data/v49.0/sobjects"><Data
+      ss:Type="String">https://startuploans&#45;-qa.my.salesforce.com/services/data/v55.0/sobjects</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://cs85.salesforce.com/services/data/v55.0/sobjects</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">https://startuploans&#45;-qa.sandbox.my.salesforce.com/services/data/v55.0/sobjects</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">https://cs106.salesforce.com/services/data/v55.0/sobjects</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/data/v55.0/sobjects</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/data/v55.0/sobjects</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans.my.salesforce.com/services/data/v55.0/sobjects</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans.my.salesforce.com/services/data/v55.0/sobjects</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SalesForce.LDWExtract.Composite</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://cs105.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="https://startuploans&#45;-qa.my.salesforce.com/services/data/v49.0"><Data
+      ss:Type="String">https://startuploans&#45;-qa.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://cs85.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">https://startuploans&#45;-qa.sandbox.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">https://cs106.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans.my.salesforce.com/services/data/v55.0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SalesForce.CompositeAPI</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">https://startuploans&#45;-qa.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">https://startuploans&#45;-qa.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">https://startuploans&#45;-qa.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="https://startuploans&#45;-qa.sandbox.my.salesforce.com/services/data/v52.0"><Data
+      ss:Type="String">https://startuploans&#45;-qa.sandbox.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">https://cs106.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans.my.salesforce.com/services/data/v55.0</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans.my.salesforce.com/services/data/v55.0</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SalesForce.OAuth.TokenUrl</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://cs105.salesforce.com/services/oauth2/token</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="https://startuploans&#45;-qa.my.salesforce.com/services/oauth2/token"><Data
+      ss:Type="String">https://startuploans&#45;-qa.my.salesforce.com/services/oauth2/token</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://cs85.salesforce.com/services/oauth2/token</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">https://startuploans&#45;-qa.sandbox.my.salesforce.com/services/oauth2/token</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">https://cs106.salesforce.com/services/oauth2/token</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/oauth2/token</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans&#45;-uat.sandbox.my.salesforce.com/services/oauth2/token</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans.my.salesforce.com/services/oauth2/token</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">https://startuploans.my.salesforce.com/services/oauth2/token</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SalesForce.UserName</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">oauthbiztalkuseratlasdev@startuploans.co.uk</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">oauthuserbiztalkqa@startuploans.co.uk</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">oauthbiztalkuseratlasdev@startuploans.co.uk</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">svc.atlasintegrationuser.qa@british-business-bank.co.uk</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">integrationuserbiztalkuat@startuploans.co.uk</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">svc.atlasintegrationuser.uat@british-business-bank.co.uk</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">svc.atlasintegrationuser.uat@british-business-bank.co.uk</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">svc.atlasintegrationuser@british-business-bank.co.uk</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">svc.atlasintegrationuser@british-business-bank.co.uk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SalesForce.PasswordToken</Data></Cell>
+    <Cell><Data ss:Type="String">5F6Fa6pP=.JxT)quy@b7Ar8A~0WMbtwAsl65joI5XOYtD2srjS</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">yfv6nwt3hcv2FAN!qmfLliNEU4bsyoNMryGxRxNYRsa</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">zvff8E4Zjv2XUPMK8uxzR4XEvq5MlS5PazONuzZkYHwQ6glcD</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">hio9dft1ATR7bft!fgh02xCkUAsIhnMj0H55p4vjvdW</Data></Cell>
+    <Cell><Data ss:Type="String">Salesforce123m3hPGRsRwQA0nSY9zwfz6ZVM</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">lop6tyj9dki5dlp_ANU0WH6tl4Fv28qOIlVwkDJL1B2</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">lop6tyj9dki5dlp_ANU0WH6tl4Fv28qOIlVwkDJL1B2</Data></Cell>
+    <Cell><Data ss:Type="String">htw*ngt9aer-bvt!AOPr8TkvhAyMoruPIBlF8xlcmNB</Data></Cell>
+    <Cell><Data ss:Type="String">htw*ngt9aer-bvt!AOPr8TkvhAyMoruPIBlF8xlcmNB</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SalesForce.ConsumerKey</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">3MVG9LzKxa43zqdLaHw3G9qTJLF.aF.N4_KcTNEvLpq9goJ0h9agcOinvYTGFLdzvQN73PyJS4GW8o2iCfGFw</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">3MVG9T992fY2Y4vsn2ku33rWZp33.ZPzf6H3EAwzonLl7yZnZF7JVHCO.Zrt8qNbGnSDVpsetUJqEjR6GyDXF</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">3MVG9X0_oZyBSzHrnzENhROatHNeu_sneTkkNEr6PJapMmLRRFFgJZrPY5TodFWv6ekO6pE2ezWQVrOqoC02_</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">3MVG9GXbtnGKjXe7YMBmzyednKc7tMQ6ByBtj3oT18.djX63FlbgRyJ13fbJAmLeTAu8EkVjaxmxayw.tgsHK</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="String">3MVG9Lu3LaaTCEgJ1gvddPIi1T3PIzqVlo1d_QmRlkhlhAScidpenkVFufbi4djVNy1AMCEQVWIlQybAk8dST</Data></Cell>
+    <Cell><Data ss:Type="String">3MVG9Lu3LaaTCEgJ1gvddPIi1T3PIzqVlo1d_QmRlkhlhAScidpenkVFufbi4djVNy1AMCEQVWIlQybAk8dST</Data></Cell>
+    <Cell><Data ss:Type="String">3MVG9HxRZv05HarSxAQtp.bkXWkTh0A2uckSbmA9smfRXOsaUrdAIhOX6WpbhLTliBZcAxvfGtAFbeF1X8QU4</Data></Cell>
+    <Cell><Data ss:Type="String">3MVG9HxRZv05HarSxAQtp.bkXWkTh0A2uckSbmA9smfRXOsaUrdAIhOX6WpbhLTliBZcAxvfGtAFbeF1X8QU4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">SalesForce.ConsumerSecret</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">26023A598CAAB1CF8E7A4F4F95E26909ECA4D9820100607E70C964E244500990</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">1748BF3393CC2AAA9BF01F1625E5C5D67F1D4CB8CD50DB804350F71AD7AEEEC2</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">905E37B06CAE1D173B89EE711B57DDA1ABEDD769D2C0BA1300C6AB480D32846F</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">FE3456D5CF83AC2D79E047C842B50CB406F3CCE44E3F2E2793DBFE6D391AE354</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">659816057397218477</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">A7FEC5609B60F026AD1F9700D29908FE1A7B7565C7AB54BBB73EF057D7D5E419</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">A7FEC5609B60F026AD1F9700D29908FE1A7B7565C7AB54BBB73EF057D7D5E419</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">1F7E24F81663DB1D79695C992C65017D4D592287266EBE29DCFDA50E84E7C33F</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">1F7E24F81663DB1D79695C992C65017D4D592287266EBE29DCFDA50E84E7C33F</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="5" ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Umi</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">UMi.TransferCustomerAPI</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/start-up-loans/v1.0/contact</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/start-up-loans/v1.0/contact</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/start-up-loans/v1.0/contact</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/start-up-loans/v1.0/contact</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/start-up-loans/v1.0/contact</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/start-up-loans/v1.0/contact</Data></Cell>
+    <Cell ss:StyleID="s84" ss:HRef="https://api-uat.startuploansmentoring.co.uk/start-up-loans/v1.0/contact"><Data
+      ss:Type="String">https://api-uat.startuploansmentoring.co.uk/start-up-loans/v1.0/contact</Data></Cell>
+    <Cell><Data ss:Type="String">https://api.startuploansmentoring.co.uk/start-up-loans/v1.0/contact</Data></Cell>
+    <Cell><Data ss:Type="String">https://api.startuploansmentoring.co.uk/start-up-loans/v1.0/contact</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">UMi.OAuth.TokenUrl</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/oauth2/v2.0/token/azure-identity</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/oauth2/v2.0/token</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/oauth2/v2.0/token</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/oauth2/v2.0/token</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/oauth2/v2.0/token</Data></Cell>
+    <Cell><Data ss:Type="String">https://api-uat.startuploansmentoring.co.uk/oauth2/v2.0/token</Data></Cell>
+    <Cell ss:StyleID="s84" ss:HRef="https://api-uat.startuploansmentoring.co.uk/oauth2/v2.0/token"><Data
+      ss:Type="String">https://api-uat.startuploansmentoring.co.uk/oauth2/v2.0/token</Data></Cell>
+    <Cell><Data ss:Type="String">https://api.startuploansmentoring.co.uk/oauth2/v2.0/token</Data></Cell>
+    <Cell><Data ss:Type="String">https://api.startuploansmentoring.co.uk/oauth2/v2.0/token</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">UMi.UserName</Data></Cell>
+    <Cell><Data ss:Type="String">d5712dbd-ad25-47ab-a78b-5d26904796cc</Data></Cell>
+    <Cell><Data ss:Type="String">d5712dbd-ad25-47ab-a78b-5d26904796cc</Data></Cell>
+    <Cell><Data ss:Type="String">d5712dbd-ad25-47ab-a78b-5d26904796cc</Data></Cell>
+    <Cell><Data ss:Type="String">d5712dbd-ad25-47ab-a78b-5d26904796cc</Data></Cell>
+    <Cell><Data ss:Type="String">d5712dbd-ad25-47ab-a78b-5d26904796cc</Data></Cell>
+    <Cell><Data ss:Type="String">d5712dbd-ad25-47ab-a78b-5d26904796cc</Data></Cell>
+    <Cell><Data ss:Type="String">d5712dbd-ad25-47ab-a78b-5d26904796cc</Data></Cell>
+    <Cell><Data ss:Type="String">68d4ff65-82a5-4faa-9a86-b9cc88ca78d3</Data></Cell>
+    <Cell><Data ss:Type="String">68d4ff65-82a5-4faa-9a86-b9cc88ca78d3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">UMi.PasswordToken</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Ute8Q~dsVJLs_vMm-D0d3zDr0CQZ54I0lOojvayU</Data></Cell>
+    <Cell><Data ss:Type="String">Ute8Q~dsVJLs_vMm-D0d3zDr0CQZ54I0lOojvayU</Data></Cell>
+    <Cell><Data ss:Type="String">Ute8Q~dsVJLs_vMm-D0d3zDr0CQZ54I0lOojvayU</Data></Cell>
+    <Cell><Data ss:Type="String">Ute8Q~dsVJLs_vMm-D0d3zDr0CQZ54I0lOojvayU</Data></Cell>
+    <Cell><Data ss:Type="String">Ute8Q~dsVJLs_vMm-D0d3zDr0CQZ54I0lOojvayU</Data></Cell>
+    <Cell><Data ss:Type="String">Ute8Q~dsVJLs_vMm-D0d3zDr0CQZ54I0lOojvayU</Data></Cell>
+    <Cell><Data ss:Type="String">Ute8Q~dsVJLs_vMm-D0d3zDr0CQZ54I0lOojvayU</Data></Cell>
+    <Cell><Data ss:Type="String">dr~8Q~vamrARRZulgwXJRlH1enZBjdg3ax6B~cRy</Data></Cell>
+    <Cell><Data ss:Type="String">dr~8Q~vamrARRZulgwXJRlH1enZBjdg3ax6B~cRy</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">ServiceBus</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ServiceBusRelay.Address</Data></Cell>
+    <Cell><Data ss:Type="String">https://bbbdevbtsrelay.servicebus.windows.net</Data></Cell>
+    <Cell><Data ss:Type="String">https://vsbt01devrelay.servicebus.windows.net</Data></Cell>
+    <Cell><Data ss:Type="String">https://bbbazrwcibtsrelay.servicebus.windows.net</Data></Cell>
+    <Cell><Data ss:Type="String">https://bbbazrwsitbtsrelay.servicebus.windows.net</Data></Cell>
+    <Cell><Data ss:Type="String">https://bbbazrwuatbtsrelay.servicebus.windows.net</Data></Cell>
+    <Cell><Data ss:Type="String">https://bbbazrwstagingbtsrelay.servicebus.windows.net</Data></Cell>
+    <Cell><Data ss:Type="String">https://bbbazrsstagingtbtsrelay.servicebus.windows.net</Data></Cell>
+    <Cell><Data ss:Type="String">https://bbbazrwprodbtsrelay.servicebus.windows.net</Data></Cell>
+    <Cell><Data ss:Type="String">https://bbbazrsprodbtsrelay.servicebus.windows.net</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">ServiceBusRelay.SharedAccessKeyName</Data></Cell>
+    <Cell><Data ss:Type="String">RootManageSharedAccessKey</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk</Data></Cell>
+    <Cell><Data ss:Type="String">BizTalk</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell><Data ss:Type="String">ServiceBusRelay.SharedAccessKey</Data></Cell>
+    <Cell><Data ss:Type="String">WWABFJwYRTbJ9m969MH0amnvM56J1h+4QWROrVKpk5M=</Data></Cell>
+    <Cell><Data ss:Type="String">IfioKCG9oO1Gmz6vKLyYOF1fgftWBbgqLE3bNFH7CKY=</Data></Cell>
+    <Cell><Data ss:Type="String">9Q2xhXGcl7OMfS0IE9BICVxPYH187HXEYAanq337igE=</Data></Cell>
+    <Cell><Data ss:Type="String">eWu1kz81E2riCdhjPu2uDGX1iMwMd4QNsn38g98a9ro=</Data></Cell>
+    <Cell><Data ss:Type="String">Na5qsEaVhZb4qE86257Nc1U39IF6Pz+sG+WriYTSri4=</Data></Cell>
+    <Cell><Data ss:Type="String">HqExTRs1Ww5Xv9TidRzx9jQwnMY9iKlpXQwOtoN4n4s=</Data></Cell>
+    <Cell><Data ss:Type="String">6ThJa4hBb828e673NcFRnEAeTreE6z2Bh0aOjs68nso=</Data></Cell>
+    <Cell><Data ss:Type="String">VAjDcb6dvbYZwRLTVRi+Vykf25N2HFdKmNUIhdynZuo=</Data></Cell>
+    <Cell><Data ss:Type="String">zn+NWd1YxZmo63nSRq+a660QpNS/Z8dWysl9ENQdD4E=</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:Orientation="Landscape"/>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.25" x:Left="0.25" x:Right="0.25" x:Top="0.25"/>
+   </PageSetup>
+   <Unsynced/>
+   <FitToPage/>
+   <Print>
+    <ValidPrinterInfo/>
+    <Scale>81</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>90</Zoom>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>6</SplitHorizontal>
+   <TopRowBottomPane>24</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>33</ActiveRow>
+     <ActiveCol>7</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

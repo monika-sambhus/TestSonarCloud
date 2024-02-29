@@ -1,0 +1,1 @@
+Roslyn version: 4.4.0.0Language version: CSharp7_3!Concurrent execution: enabledºµFile 'C:\Monika\BBB_BizTalk\Source.PLS\Atlas\Components\Interface\BBB.ESB.Atlas.PLS.Utilities\obj\Debug\.NETFramework,Version=v4.6.AssemblyAttributes.cs' was recognized as generated

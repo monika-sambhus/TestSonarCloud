@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BizTalk", "BizTalk", "{C6F6A722-AA09-4340-B0C9-BFC65DE96163}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{0993EA87-60F4-47F4-9217-E1CDDC9C0F4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{2B69FB30-B763-4FBE-8E3C-FEE2F67B3AE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{259557DC-F48E-4E6E-A062-46F1064ECC3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{0DF298B7-4E48-4779-94C9-3E320898C2FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4F871E63-D7C9-4D7A-9D21-B4921FEA18D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wsdl", "wsdl", "{476309E1-D2D7-412E-961F-8D438B5A72E2}"
+	ProjectSection(SolutionItems) = preProject
+		Atlas.wsdl = Atlas.wsdl
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{4FE22B86-E47F-4965-964E-12E2C3B10FFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{4284C81C-0DA9-445E-A829-BC9CFB9A1943}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\Deployment.btdfproj = Deployment\Deployment.btdfproj
+		Deployment\InstallWizard.xml = Deployment\InstallWizard.xml
+		Deployment\License.rtf = Deployment\License.rtf
+		Deployment\PortBindingsMaster.xml = Deployment\PortBindingsMaster.xml
+		Deployment\SettingsFileGenerator.xml = Deployment\SettingsFileGenerator.xml
+		Deployment\UnInstallWizard.xml = Deployment\UnInstallWizard.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Atlas.PLS.Common", "Atlas\BizTalk\Common\BBB.ESB.Atlas.PLS.Common\ESB.Atlas.PLS.Common.btproj", "{064BC3C3-AAA9-490E-B8C1-B833AAF81F78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Atlas.PLS.Mentoring", "Atlas\BizTalk\Interface\BBB.ESB.Atlas.PLS.Mentoring\ESB.Atlas.PLS.Mentoring.btproj", "{EDBBAAAE-8006-4B23-9A51-588EA7303D17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Atlas.PLS.OnlinePlatform", "Atlas\BizTalk\Interface\BBB.ESB.Atlas.PLS.OnlinePlatform\ESB.Atlas.PLS.OnlinePlatform.btproj", "{6015332A-D49A-4CFE-9F12-29CC04968FD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Atlas.PLS.Customer", "Atlas\BizTalk\Interface\BBB.ESB.Atlas.PLS.Customer\ESB.Atlas.PLS.Customer.btproj", "{6C67C1E9-11A0-41B5-BCCC-FE01CE56EA7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Atlas.PLS.Utilities", "Atlas\Components\Interface\BBB.ESB.Atlas.PLS.Utilities\ESB.Atlas.PLS.Utilities.csproj", "{73261930-E058-4832-8ED1-C46A59AFBF0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{064BC3C3-AAA9-490E-B8C1-B833AAF81F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064BC3C3-AAA9-490E-B8C1-B833AAF81F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064BC3C3-AAA9-490E-B8C1-B833AAF81F78}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{064BC3C3-AAA9-490E-B8C1-B833AAF81F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064BC3C3-AAA9-490E-B8C1-B833AAF81F78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064BC3C3-AAA9-490E-B8C1-B833AAF81F78}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EDBBAAAE-8006-4B23-9A51-588EA7303D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBBAAAE-8006-4B23-9A51-588EA7303D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBBAAAE-8006-4B23-9A51-588EA7303D17}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EDBBAAAE-8006-4B23-9A51-588EA7303D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBBAAAE-8006-4B23-9A51-588EA7303D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDBBAAAE-8006-4B23-9A51-588EA7303D17}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6015332A-D49A-4CFE-9F12-29CC04968FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6015332A-D49A-4CFE-9F12-29CC04968FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6015332A-D49A-4CFE-9F12-29CC04968FD2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6015332A-D49A-4CFE-9F12-29CC04968FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6015332A-D49A-4CFE-9F12-29CC04968FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6015332A-D49A-4CFE-9F12-29CC04968FD2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6C67C1E9-11A0-41B5-BCCC-FE01CE56EA7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C67C1E9-11A0-41B5-BCCC-FE01CE56EA7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C67C1E9-11A0-41B5-BCCC-FE01CE56EA7F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6C67C1E9-11A0-41B5-BCCC-FE01CE56EA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C67C1E9-11A0-41B5-BCCC-FE01CE56EA7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C67C1E9-11A0-41B5-BCCC-FE01CE56EA7F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{73261930-E058-4832-8ED1-C46A59AFBF0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73261930-E058-4832-8ED1-C46A59AFBF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73261930-E058-4832-8ED1-C46A59AFBF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73261930-E058-4832-8ED1-C46A59AFBF0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B69FB30-B763-4FBE-8E3C-FEE2F67B3AE6} = {0993EA87-60F4-47F4-9217-E1CDDC9C0F4C}
+		{259557DC-F48E-4E6E-A062-46F1064ECC3B} = {0993EA87-60F4-47F4-9217-E1CDDC9C0F4C}
+		{0DF298B7-4E48-4779-94C9-3E320898C2FD} = {C6F6A722-AA09-4340-B0C9-BFC65DE96163}
+		{4F871E63-D7C9-4D7A-9D21-B4921FEA18D4} = {C6F6A722-AA09-4340-B0C9-BFC65DE96163}
+		{476309E1-D2D7-412E-961F-8D438B5A72E2} = {0993EA87-60F4-47F4-9217-E1CDDC9C0F4C}
+		{4FE22B86-E47F-4965-964E-12E2C3B10FFC} = {0993EA87-60F4-47F4-9217-E1CDDC9C0F4C}
+		{4284C81C-0DA9-445E-A829-BC9CFB9A1943} = {0993EA87-60F4-47F4-9217-E1CDDC9C0F4C}
+		{064BC3C3-AAA9-490E-B8C1-B833AAF81F78} = {4F871E63-D7C9-4D7A-9D21-B4921FEA18D4}
+		{EDBBAAAE-8006-4B23-9A51-588EA7303D17} = {0DF298B7-4E48-4779-94C9-3E320898C2FD}
+		{6015332A-D49A-4CFE-9F12-29CC04968FD2} = {0DF298B7-4E48-4779-94C9-3E320898C2FD}
+		{6C67C1E9-11A0-41B5-BCCC-FE01CE56EA7F} = {0DF298B7-4E48-4779-94C9-3E320898C2FD}
+		{73261930-E058-4832-8ED1-C46A59AFBF0C} = {4FE22B86-E47F-4965-964E-12E2C3B10FFC}
+	EndGlobalSection
+EndGlobal
